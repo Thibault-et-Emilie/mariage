@@ -16,6 +16,55 @@ header {
     text-align: center;
     position: relative;
     z-index: 1;
+
+    /* Styles pour le menu de navigation */
+#main-nav {
+    display: none; /* Masquer le menu par défaut */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60%;
+    background-color: #333;
+    padding-top: 80px; /* Même hauteur que le header pour éviter de cacher le contenu */
+    z-index: 1000; /* Pour s'assurer que le menu apparaît au-dessus de tout */
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(0%); /* Déplacer le menu hors de la vue */
+}
+
+#main-nav.open {
+    transform: translateX(0); /* Faire glisser le menu dans la vue */
+}
+
+#main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav ul li {
+    padding: 10px;
+}
+
+#main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Styles pour le bouton de menu */
+#menu-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 }
 
 h1 {
@@ -69,52 +118,5 @@ form button {
 #guest-names input {
     padding: 10px;
     margin-top: 5px;
-}
-/* Styles pour le menu de navigation */
-#main-nav {
-    display: none; /* Masquer le menu par défaut */
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 60%;
-    background-color: #333;
-    padding-top: 80px; /* Même hauteur que le header pour éviter de cacher le contenu */
-    z-index: 1000; /* Pour s'assurer que le menu apparaît au-dessus de tout */
-    transition: transform 0.4s ease-in-out;
-    transform: translateX(0%); /* Déplacer le menu hors de la vue */
-}
-
-#main-nav.open {
-    transform: translateX(0); /* Faire glisser le menu dans la vue */
-}
-
-#main-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#main-nav ul li {
-    padding: 10px;
-}
-
-#main-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-/* Styles pour le bouton de menu */
-#menu-toggle {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    color: #333;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
 }
 
