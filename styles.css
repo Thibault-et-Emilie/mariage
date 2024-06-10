@@ -29,11 +29,11 @@ header {
     padding-top: 80px; /* Même hauteur que le header pour éviter de cacher le contenu */
     z-index: 1000; /* Pour s'assurer que le menu apparaît au-dessus de tout */
     transition: transform 0.4s ease-in-out;
-    transform: translateX(0); /* Déplacer le menu hors de la vue */
+    transform: translateX(100%); /* Déplacer le menu hors de la vue */
 }
 
 #main-nav.open {
-    transform: translateX(-100%); /* Faire glisser le menu dans la vue */
+    transform: translateX(0); /* Faire glisser le menu dans la vue */
 }
 
 #main-nav ul {
