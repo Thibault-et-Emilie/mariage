@@ -32,7 +32,7 @@ section {
 }
 
 h2 {
-    color: #C568F8;
+    color: #D78CF8;
 }
 
 form {
@@ -50,7 +50,7 @@ form input, form button {
 }
 
 form button {
-    background: #C568F8;
+    background: #D78CF8;
     color: white;
     border: none;
     border-radius: 5px;
