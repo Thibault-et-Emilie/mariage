@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>Formulaire RSVP</h1>
-        <p>Remplissez le formulaire ci-dessous pour confirmer votre présence à notre mariage.</p>
+        <p>Remplissez le formulaire ci-dessous pour confirmer ou non votre présence à notre mariage.</p>
     </header>
     <section id="rsvp">
         <form id="rsvp-form">
@@ -20,6 +20,16 @@
             <label for="guests">Nombre d'invités:</label>
             <input type="number" id="guests" name="guests" min="1" value="1" required>
             <div id="guest-names"></div> <!-- Conteneur pour les prénoms des invités -->
+            <label>Pourrez-vous participer à l'événement ?</label>
+            <div>
+                <input type="radio" id="participate-yes" name="participate" value="oui" required>
+                <label for="participate-yes">Oui</label>
+            </div>
+            <div>
+                <input type="radio" id="participate-no" name="participate" value="non" required>
+                <label for="participate-no">Malheureusement Non</label>
+            </div>
+            
             <button type="submit">Envoyer</button>
         </form>
         <p id="response"></p>
