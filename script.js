@@ -14,12 +14,15 @@ menuLinks.forEach(function(link) {
 });
 
 // Gestion du formulaire
-document.getElementById('guests').addEventListener('input', function() {
-    const guestCount = parseInt(this.value);
+    const guestsInput = document.getElementById('guests');
+    guestsInput.addEventListener('change', function() {
+    const numguests = parseInt(guestsInput.value);
     const guestNamesContainer = document.getElementById('guest-names');
     guestNamesContainer.innerHTML = ''; // Vide les champs précédents
 
-    for (let i = 1; i < guestCount; i++) {
+
+
+    for (let i = 1; i < numguests; i++) {
         const label = document.createElement('label');
         label.setAttribute('for', 'guest-name-' + i);
         label.textContent = 'Prénom de l\'invité ' + i + ':';
