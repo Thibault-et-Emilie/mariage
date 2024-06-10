@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: rgba(80, 179, 162, 0.6); /* Utilisation de rgba pour une transparence */
+    background: rgba(190, 10, 250, 0.6); /* Utilisation de rgba pour une transparence */
     color: white;
     padding: 2rem 0;
     text-align: center;
