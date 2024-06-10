@@ -1,3 +1,7 @@
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('main-nav').classList.toggle('open'); // Ajoute ou retire la classe "open" pour afficher ou masquer le menu
+});
+
 document.getElementById('guests').addEventListener('input', function() {
     const guestCount = parseInt(this.value);
     const guestNamesContainer = document.getElementById('guest-names');
