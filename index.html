@@ -13,6 +13,16 @@
     <header>
         <h1>Mariage Émilie et Thibault!</h1>
         <p>Nous sommes ravis de partager ce moment spécial avec vous.</p>
+         <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="formulaire.html">RSVP</a></li> <!-- Lien vers la page du formulaire -->
+                <li><a href="#notre-histoire">Notre Histoire</a></li>
+                <li><a href="#details">Les détails de l'événement</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <section id="notre-histoire">
         <h2>Notre histoire</h2>
@@ -24,19 +34,10 @@
         <p>Heure: 15h00</p>
         <p>Lieu: Paris, France</p>
     </section>
-    <section id="rsvp">
+   <section id="rsvp">
         <h2>RSVP</h2>
-        <form id="rsvp-form">
-            <label for="name">Nom:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="guests">Nombre d'invités:</label>
-            <input type="number" id="guests" name="guests" min="1" value="1" required>
-            <div id="guest-names"></div> <!-- Conteneur pour les prénoms des invités -->
-            <button type="submit">Envoyer</button>
-        </form>
-        <p id="response"></p>
+        <p>Remplissez le formulaire ci-dessous pour confirmer votre présence à notre mariage.</p>
+        <a href="formulaire.html">Accéder au formulaire</a> <!-- Lien vers la page du formulaire -->
     </section>
     <section id="galerie">
         <h2>Galerie</h2>
