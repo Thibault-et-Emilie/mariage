@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Courier New, monospace;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background: rgba(80, 179, 162, 0.8); /* Utilisation de rgba pour une transparence */
+    background: rgba(80, 179, 162, 0.6); /* Utilisation de rgba pour une transparence */
     color: white;
     padding: 2rem 0;
     text-align: center;
@@ -18,10 +18,14 @@ header {
     z-index: 1;
 }
 
+h1 {
+    font-family: 'Special Elite', monospace; /* Applique la police de style machine à écrire uniquement à h1 */
+}
+
 section {
     margin: 20px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Légère transparence pour les sections */
+    background: rgba(255, 255, 255, 0.8); /* Légère transparence pour les sections */
     border-radius: 8px;
     position: relative;
     z-index: 1;
