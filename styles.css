@@ -33,7 +33,7 @@ header {
 }
 
 #main-nav.open {
-    transform: translateX(0); /* Faire glisser le menu dans la vue */
+    transform: translateX(-100%); /* Faire glisser le menu dans la vue */
 }
 
 #main-nav ul {
