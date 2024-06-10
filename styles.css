@@ -80,7 +80,7 @@ form button {
     right: 0;
     height: 100%;
     width: 60%;
-    background-color: rgba(190, 100, 250, 0.3);
+    background-color: rgba(190, 100, 250, 0.6);
     padding-top: 80px; /* Même hauteur que le header pour éviter de cacher le contenu */
     z-index: 20; /* Pour s'assurer que le menu apparaît au-dessus de tout */
     transition: transform 0.6s ease-in-out;
