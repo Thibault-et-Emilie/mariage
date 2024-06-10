@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    background-image: url('background.png'); /* Ajoute ton image de fond ici */
+    background-image: url('background.jpg'); /* Ajoute ton image de fond ici */
     background-attachment: fixed; /* Pour l'effet de défilement parallaxe */
     background-size: cover; /* Pour couvrir tout l'écran */
 }
