@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Mariage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue à notre mariage!</h1>
+        <p>Nous sommes ravis de partager ce moment spécial avec vous.</p>
+    </header>
+    <section id="notre-histoire">
+        <h2>Notre histoire</h2>
+        <p>Voici notre belle histoire d'amour...</p>
+    </section>
+    <section id="details">
+        <h2>Les détails de l'événement</h2>
+        <p>Date: 10 juin 2024</p>
+        <p>Heure: 15h00</p>
+        <p>Lieu: Paris, France</p>
+    </section>
+    <section id="rsvp">
+        <h2>RSVP</h2>
+        <form id="rsvp-form">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="guests">Nombre d'invités:</label>
+            <input type="number" id="guests" name="guests" required>
+            <button type="submit">Envoyer</button>
+        </form>
+        <p id="response"></p>
+    </section>
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <p>Quelques photos de nous...</p>
+        <!-- Ajoute des photos ici -->
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Pour toute question, veuillez nous contacter à: <a href="mailto:votremail@example.com">votremail@example.com</a></p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
