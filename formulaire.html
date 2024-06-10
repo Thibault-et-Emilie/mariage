@@ -15,11 +15,15 @@
         <form id="rsvp-form">
             <label for="name">Nom:</label>
             <input type="text" id="name" name="name" required>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            
             <label for="guests">Nombre d'invités:</label>
             <input type="number" id="guests" name="guests" min="1" value="1" required>
+
             <div id="guest-names"></div> <!-- Conteneur pour les prénoms des invités -->
+
             <label>Pourrez-vous participer à l'événement ?</label>
             <div>
                 <input type="radio" id="participate-yes" name="participate" value="oui" required>
