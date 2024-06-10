@@ -13,8 +13,7 @@ menuLinks.forEach(function(link) {
     });
 });
 
-// gestion de l'ajout de personnes formulaire
-
+// Gestion du formulaire
 const guestsInput = document.getElementById('guests');
 const guestNamesContainer = document.getElementById('guest-names');
 
@@ -40,41 +39,24 @@ guestsInput.addEventListener('change', function() {
     }
 });
 
-// gestion du formulaire
 document.getElementById('rsvp-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const guests = document.getElementById('guests').value;
-    let guestNames = [];
-
-    for (let i = 1; i < guests; i++) {
-        guestNames.push(document.getElementById('guest-name-' + i).value);
-    }
     const participate = document.querySelector('input[name="participate"]:checked').value;
 
-    // Afficher le message de réponse
-    document.getElementById('response').textContent = `Merci, ${name}! Nous avons bien reçu votre RSVP pour ${guests} invités.`;
-
-    // Préparer les données pour l'email
-    const formData = {
-        name: name,
-        email: email,
-        guests: guests,
-        guestNames: guestNames
-    };
-
-    // Envoyer un email avec les informations du formulaire
-    sendEmail(formData);
-});
-
-function sendEmail(formData) {
-    // Utiliser EmailJS pour envoyer un email
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
-    .then(function(response) {
-        console.log('Email envoyé avec succès!', response.status, response.text);
-    }, function(error) {
-        console.error('Échec de l\'envoi de l\'email:', error);
+    const guestNames = [];
+    document.querySelectorAll('input[name="guest-names[]"]').forEach(function(input) {
+        guestNames.push(input.value);
     });
-}
+
+    console.log('Nom:', name);
+    console.log('Email:', email);
+    console.log('Nombre d\'invités:', guests);
+    console.log('Participation:', participate);
+    console.log('Prénoms des invités:', guestNames.join(', '));
+
+    document.getElementById('response').innerText = 'Merci pour votre réponse!';
+});
