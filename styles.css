@@ -19,7 +19,7 @@ header {
 
     /* Styles pour le menu de navigation */
 #main-nav {
-    display: none; /* Masquer le menu par défaut */
+    display: block flex; /* afficher menu en bloc qui s'adapte */
     position: fixed;
     top: 0;
     right: 0;
