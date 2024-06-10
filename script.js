@@ -13,7 +13,7 @@ menuLinks.forEach(function(link) {
     });
 });
 
-
+// gestion de l'ajout de personnes formulaire
 document.getElementById('guests').addEventListener('input', function() {
     const guestCount = parseInt(this.value);
     const guestNamesContainer = document.getElementById('guest-names');
@@ -35,6 +35,7 @@ document.getElementById('guests').addEventListener('input', function() {
     }
 });
 
+// gestion du formulaire
 document.getElementById('rsvp-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -46,6 +47,7 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
     for (let i = 1; i < guests; i++) {
         guestNames.push(document.getElementById('guest-name-' + i).value);
     }
+    const participate = document.querySelector('input[name="participate"]:checked').value;
 
     // Afficher le message de réponse
     document.getElementById('response').textContent = `Merci, ${name}! Nous avons bien reçu votre RSVP pour ${guests} invités.`;
