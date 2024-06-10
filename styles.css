@@ -5,20 +5,27 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url('background.png'); /* Ajoute ton image de fond ici */
+    background-attachment: fixed; /* Pour l'effet de défilement parallaxe */
+    background-size: cover; /* Pour couvrir tout l'écran */
 }
 
 header {
-    background: #50b3a2;
+    background: rgba(80, 179, 162, 0.8); /* Utilisation de rgba pour une transparence */
     color: white;
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 section {
     margin: 20px;
     padding: 20px;
-    background: white;
+    background: rgba(255, 255, 255, 0.9); /* Légère transparence pour les sections */
     border-radius: 8px;
+    position: relative;
+    z-index: 1;
 }
 
 h2 {
