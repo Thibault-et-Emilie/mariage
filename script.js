@@ -14,24 +14,25 @@ menuLinks.forEach(function(link) {
 });
 
 // gestion de l'ajout de personnes formulaire
+
 const guestsInput = document.getElementById('guests');
 const guestNamesContainer = document.getElementById('guest-names');
-    
 
-    guestsInput.addEventListener('change', function() {
-        guestNamesContainer.innerHTML = ''; // Vide les champs précédents
-    const guestCount = parseInt(guestInput.value);
-    
+guestsInput.addEventListener('change', function() {
+    // Vider le conteneur des prénoms des invités
+    guestNamesContainer.innerHTML = '';
+    const numGuests = parseInt(guestsInput.value);
 
-    for (let i = 1; i < guestCount; i++) {
+    // Ajouter des champs de prénom en fonction du nombre d'invités
+    for (let i = 1; i <= numGuests; i++) {
         const label = document.createElement('label');
-        label.setAttribute('for', 'guest-name-' + i);
-        label.textContent = 'Prénom de l\'invité ' + i + ':';
+        label.setAttribute('for', `guest-name-${i}`);
+        label.textContent = `Prénom de l'invité ${i}:`;
 
         const input = document.createElement('input');
         input.type = 'text';
-        input.id = 'guest-name-' + i;
-        input.name = 'guest-name-' + i;
+        input.id = `guest-name-${i}`;
+        input.name = `guest-names[]`;
         input.required = true;
 
         guestNamesContainer.appendChild(label);
