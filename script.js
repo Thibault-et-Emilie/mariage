@@ -14,10 +14,14 @@ menuLinks.forEach(function(link) {
 });
 
 // gestion de l'ajout de personnes formulaire
-document.getElementById('guests').addEventListener('input', function() {
-    const guestCount = parseInt(this.value);
-    const guestNamesContainer = document.getElementById('guest-names');
-    guestNamesContainer.innerHTML = ''; // Vide les champs précédents
+const guestsInput = document.getElementById('guests');
+const guestNamesContainer = document.getElementById('guest-names');
+    
+
+    guestsInput.addEventListener('change', function() {
+        guestNamesContainer.innerHTML = ''; // Vide les champs précédents
+    const guestCount = parseInt(guestInput.value);
+    
 
     for (let i = 1; i < guestCount; i++) {
         const label = document.createElement('label');
