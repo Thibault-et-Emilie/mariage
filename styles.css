@@ -74,7 +74,7 @@ form button {
 
  /* Styles pour le menu de navigation */
 #main-nav {
-    display: none; 
+    display: block flex; 
     position: fixed;
     top: 0;
     right: 0;
