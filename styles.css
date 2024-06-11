@@ -73,16 +73,19 @@ form button {
 }
 
  /* Styles pour le menu de navigation */
-#main-nav {
-    display: block flex; 
+    #main-nav {
+    display: flex; 
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
-    width: 100px;
     background-color: rgba(190, 100, 250, 0.6);
     padding-top: 80px; /* Même hauteur que le header pour éviter de cacher le contenu */
     z-index: 20; /* Pour s'assurer que le menu apparaît au-dessus de tout */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap; /* Permet au menu de passer à la ligne suivante si nécessaire */
     transition: transform 0.8s ease-in-out;
     transform: translateX(100%); /* Déplacer le menu hors de la vue */
 }
@@ -95,16 +98,19 @@ form button {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 1em
 }
 
 #main-nav ul li {
-    padding: 10px;
+    margin: 0;
 }
 
 #main-nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    display: block;
 }
 
 /* Styles pour le bouton de menu */
