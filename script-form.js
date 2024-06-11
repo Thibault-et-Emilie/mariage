@@ -2,7 +2,7 @@
 const guestsInput = document.getElementById('guests');
 const guestNamesContainer = document.getElementById('guest-names');
 
-guestsInput.addEventListener('change', function() {
+guestsInput.addEventListener('input', function() {
     // Vider le conteneur des prénoms des invités
     guestNamesContainer.innerHTML = '';
     const numGuests = parseInt(guestsInput.value);
