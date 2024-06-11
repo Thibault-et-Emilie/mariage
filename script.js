@@ -1,14 +1,15 @@
-document.getElementById('menu-toggle').addEventListener('click', function() {
-    document.getElementById('main-nav').classList.toggle('open'); // Ajoute ou retire la classe "open" pour afficher ou masquer le menu
-});
-// Sélectionne tous les éléments de lien dans le menu de navigation
-const menuLinks = document.querySelectorAll('#main-nav ul li a');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navUl = document.querySelector('nav ul');
 
-// Boucle à travers chaque lien du menu
-menuLinks.forEach(function(link) {
-    // Ajoute un événement de clic à chaque lien
-    link.addEventListener('click', function() {
-        // Retire la classe 'open' du menu de navigation lorsque tu cliques sur un lien
-        document.getElementById('main-nav').classList.remove('open');
+    menuToggle.addEventListener('click', function() {
+        navUl.classList.toggle('open');
     });
-})
+
+    // Ajouter un événement de clic aux liens du menu pour fermer le menu après la sélection d'un élément
+    const menuLinks = document.querySelectorAll('nav ul li a');
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            navUl.classList.remove('open');
+        });
+    });
