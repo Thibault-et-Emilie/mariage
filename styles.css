@@ -12,20 +12,20 @@ body {
 header.large-header {
     background: transparent; /* Utilisation de rgba pour une transparence */
     color: white;
-    padding: 2rem 0;
+    padding: 20em;
     text-align: center;
     position: relative;
     z-index: 10;
-    height: 600px
+    
 }
 header.small-header {
     background: transparent; /* Utilisation de rgba pour une transparence */
     color: white;
-    padding: 2rem 0;
+    padding: 5em;
     text-align: center;
     position: relative;
     z-index: 10;
-    height: 600px
+    
 
 }
 
