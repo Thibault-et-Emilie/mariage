@@ -79,14 +79,12 @@ form button {
     top: 0;
     right: 0;
     height: 100%;
+    flex-wrap: wrap;
+    text-align: center;
     background-color: rgba(190, 100, 250, 0.6);
     padding-top: 80px; /* Même hauteur que le header pour éviter de cacher le contenu */
     z-index: 20; /* Pour s'assurer que le menu apparaît au-dessus de tout */
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    flex-wrap: wrap; /* Permet au menu de passer à la ligne suivante si nécessaire */
-    transition: transform 0.8s ease-in-out;
+    transition: transform 0.6s ease-in-out;
     transform: translateX(100%); /* Déplacer le menu hors de la vue */
 }
 
