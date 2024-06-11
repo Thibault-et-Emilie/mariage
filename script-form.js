@@ -11,7 +11,7 @@ guestsInput.addEventListener('change', function() {
     for (let i = 1; i <= numGuests; i++) {
         const label = document.createElement('label');
         label.setAttribute('for', 'guest-name-');
-        label.textContent = 'Prénom de l'invité ';
+        label.textContent = 'Prénom de l'autre invité ';
 
         const input = document.createElement('input');
         input.type = 'text';
