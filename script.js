@@ -12,27 +12,3 @@ menuLinks.forEach(function(link) {
         document.getElementById('main-nav').classList.remove('open');
     });
 })
-
-/* Lightbox styles */
-#lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    z-index: 1000;
-}
-
-#lightbox.active {
-    display: flex;
-}
-
-#lightbox img {
-    max-width: 90%;
-    max-height: 80%;
-}
