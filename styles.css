@@ -186,3 +186,8 @@ form button {
     max-height: 80%;
 }
 
+#map iframe {
+    width: 90%;
+    height: 500px;
+    border: 0;
+}
