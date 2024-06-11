@@ -186,8 +186,18 @@ form button {
     max-height: 80%;
 }
 
+ /* Ajoute ce style pour rendre la carte responsive */
+#map {
+            width: 90%;
+            height: 0;
+            padding-bottom: 56.25%; /* Proportion 16:9 */
+            position: relative;
+        }
 #map iframe {
-    width: 90%;
-    height: 500px;
-    border: 0;
-}
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90%;
+            height: 90%;
+            border: 0;
+        }
