@@ -9,7 +9,16 @@ body {
     background-position: center; /* Centre l'image de fond */
 }
 
-header {
+header.large-header {
+    background: transparent; /* Utilisation de rgba pour une transparence */
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    height: 600px
+}
+header.small-header {
     background: transparent; /* Utilisation de rgba pour une transparence */
     color: white;
     padding: 2rem 0;
@@ -118,11 +127,11 @@ form button {
     display: block;
     position: fixed;
     top: 40px;
-    right: 20px;
+    right: 40px;
     background-color: transparent;
     z-index: 30;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
 }
