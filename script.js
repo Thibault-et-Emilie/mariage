@@ -11,7 +11,7 @@ menuLinks.forEach(function(link) {
         // Retire la classe 'open' du menu de navigation lorsque tu cliques sur un lien
         document.getElementById('main-nav').classList.remove('open');
     });
-});
+})
 
 /* Lightbox styles */
 #lightbox {
