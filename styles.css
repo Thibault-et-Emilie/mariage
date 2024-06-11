@@ -12,7 +12,8 @@ body {
 header.large-header {
     background: transparent; /* Utilisation de rgba pour une transparence */
     color: white;
-    padding: 20em;
+    padding-top: 12em;
+    padding-bottom:20em;
     text-align: center;
     position: relative;
     z-index: 10;
@@ -21,7 +22,8 @@ header.large-header {
 header.small-header {
     background: transparent; /* Utilisation de rgba pour une transparence */
     color: white;
-    padding: 5em;
+    padding-top: 5em;
+    padding-bottom: 15em;
     text-align: center;
     position: relative;
     z-index: 10;
