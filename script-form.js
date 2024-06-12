@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const guestsInput = document.getElementById('guests');
     const guestNamesContainer = document.getElementById('guest-names');
+    const participateYes = document.getElementById('participate-yes');
+    const participateNo = document.getElementById('participate-no');
+    const stayOptions = document.getElementById('stay-options');
 
     guestsInput.addEventListener('input', function() {
         // Vider le conteneur des prénoms des invités
@@ -44,5 +47,19 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Prénoms des invités:', guestNames.join(', '));
 
         document.getElementById('response').innerText = 'Merci pour votre réponse!';
+    });
+});
+
+ // Gérer l'affichage des options de durée de séjour
+    participateYes.addEventListener('change', function () {
+        if (participateYes.checked) {
+            stayOptions.style.display = 'block';
+        }
+    });
+
+    participateNo.addEventListener('change', function () {
+        if (participateNo.checked) {
+            stayOptions.style.display = 'none';
+        }
     });
 });
