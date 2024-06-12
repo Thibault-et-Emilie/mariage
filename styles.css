@@ -24,7 +24,6 @@ header.large-header {
     background: transparent; /* Couleur de fond du cadre */
     color: #fff;
     padding: 20px;
-    border-radius: 50% 50% 0 0; /* Coins arrondis en haut */
     border: 4px solid #fff;
     width: 80%;
     max-width: 500px;
