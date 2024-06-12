@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Écouteur d'événements pour la soumission du formulaire
-    document.getElementById('submit').addEventListener('click', function() {
+    document.querySelector('section#rsvp #envoyer').addEventListener('click', function() {
+    // Code à exécuter lors du clic sur l'élément
+
         
 
         // Récupérer les valeurs des champs du formulaire
