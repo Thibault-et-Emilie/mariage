@@ -2,32 +2,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const guestTable = document.getElementById('guest-data');
 
     // Fonction pour ajouter une ligne au tableau
-    function addGuestToTable(name, email, numGuests) {
+    function addGuestToTable(name, email, participate, dureesejour, chambre) {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${name}</td>
             <td>${email}</td>
-            <td>${numGuests}</td>
+            <td>${participate}</td>
+            <td>${dureesejour}</td>
+            <td>${chambre}</td>
             <!-- Ajoutez d'autres cellules de données au besoin -->
         `;
         guestTable.appendChild(row);
     }
 
-    // Écouteur d'événements pour la soumission du formulaire
-    document.querySelector('section#rsvp button#envoyer').addEventListener('click', function() {
-    // Code à exécuter lors du clic sur l'élément
+   // Récupérer les données du LocalStorage
+    const formData = JSON.parse(localStorage.getItem('formData'));
+    if (formData) {
+        // Ajouter l'invité principal au tableau
+        addGuestToTable(formData.name, formData.email, formData.name, formData.participate);
 
-        
+       
 
-        // Récupérer les valeurs des champs du formulaire
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const numGuests = document.getElementById('guests').value;
-
-        // Ajouter les données au tableau
-        addGuestToTable(name, email, numGuests);
-
-        // Réinitialiser le formulaire si nécessaire
-        this.reset();
-    });
+        // Supprimer les données du LocalStorage après les avoir utilisées
+        localStorage.removeItem('formData');
+    }
+   
 });
