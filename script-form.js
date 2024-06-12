@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     
-    document.getElementById('submit').addEventListener('click', function() {
+    document.getElementById('envoyer').addEventListener('click', function() {
         document.getElementById('response').innerText = 'Merci pour votre réponse!';
     });
 
