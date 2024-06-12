@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const guestsInput = document.getElementById('guests');
     const guestNamesContainer = document.getElementById('guest-names');
-    const participateYes = document.getElementById('participate-yes');
-    const participateNo = document.getElementById('participate-no');
+    const participateRadios = document.querySelectorAll('input[name="participate"]');
     const stayOptions = document.getElementById('stay-options');
+    const stayAnswer = document.querySelectorAll('input[name="stay-duration"]');
+    const hebergement = document.getElementsById('souhait-hebergement');
 
         guestsInput.addEventListener('input', function() {
             // Vider le conteneur des prénoms des invités
@@ -51,15 +52,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
  // Gérer l'affichage des options de durée de séjour
-    participateYes.addEventListener('change', function () {
-        if (participateYes.checked) {
-            stayOptions.style.display = 'block';
-        }
+    participateRadios.forEach(function (radio) {
+        radio.addEventListener('change', function () {
+            if (document.getElementById('participate-yes').checked) {
+                stayOptions.style.display = 'block';
+            } else {
+                stayOptions.style.display = 'none';
+            }
+        });
     });
 
-    participateNo.addEventListener('change', function () {
-        if (participateNo.checked) {
-            stayOptions.style.display = 'none';
-        }
+
+    // Gérer l'affichage des options d'hébergement
+    stayAnswer.forEach(function (radio) {
+        radio.addEventListener('change', function () {
+            if (document.getElementById('stay-1').checked) {
+                hebergement.style.display = 'none';
+            } else {
+                hebergement.style.display = 'block';
+            }
+        });
     });
+    
 });
