@@ -28,9 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     
-    document.getElementById('envoyer').addEventListener('click', function() {
-        document.getElementById('response').innerText = 'Merci pour votre réponse!';
-    });
 
 
  // Gérer l'affichage des options de durée de séjour
@@ -55,5 +52,40 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    function getRadioValue(name) {
+        const radios = document.getElementsByName(name);
+        for (let i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                return radios[i].value;
+            }
+        }
+        return null;
+    }
+     document.getElementById('envoyer').addEventListener('click', function() {
+        
+        const nombreinviteplus = document.getElementById('guests').value;
+        for (let i =0; i < nombreinviteplus; i++) {
+
+            if (i=0) {
+                const name = document.getElementById('name').value;
+            } else {
+                const name = document.getElementById(`guest-name-${i}`).value;
+            }
+            const email = document.getElementById('email').value;
+            const participate = getRadioValue('participate');
+            const dureesejour = getRadioValue('stay-duration');
+            const couchage = getRadioValue('hebergement');
+
+            const formData = { name, email, participate, guests };
+            localStorage.setItem('formData', JSON.stringify(formData));
+        }
+
+        // Réinitialiser le formulaire
+        this.reset();
+        guestNamesContainer.innerHTML = ''; // Réinitialiser les champs de prénoms supplémentaires
+
+         document.getElementById('response').innerText = 'Merci pour votre réponse!';
     
+    });
 });
