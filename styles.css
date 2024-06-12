@@ -3,14 +3,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    
+}
+
+header.large-header {
     background-image: url('background.jpg'); /* Ajoute ton image de fond ici */
     background-attachment: fixed; /* Pour l'effet de défilement parallaxe */
     background-size: cover; /* Pour couvrir tout l'écran */
     background-position: center; /* Centre l'image de fond */
-}
-
-header.large-header {
-    background: transparent; /* Utilisation de rgba pour une transparence */
     color: white;
     padding-top: 8em;
     padding-bottom:10em;
