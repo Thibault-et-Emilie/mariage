@@ -12,3 +12,15 @@ menuLinks.forEach(function(link) {
         document.getElementById('main-nav').classList.remove('open');
     });
 })
+
+ function setMilestoneRadius() {
+            const milestone = document.querySelector('.milestone');
+            const width = milestone.offsetWidth;
+            const borderRadius = width / 2 + 'px';
+            milestone.style.borderTopLeftRadius = borderRadius;
+            milestone.style.borderTopRightRadius = borderRadius;
+        }
+
+        // Appliquer au chargement et au redimensionnement de la fenêtre
+        window.addEventListener('load', setMilestoneRadius);
+        window.addEventListener('resize', setMilestoneRadius);
