@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire RSVP</title>
+    <title>Base de Données des Invités</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,47 @@
         <p>Petite base de données pas sécurisée du tout sur la participation des gens.<p/>
         <p>Si vous vous êtes fait chiés à aller voir le code pour trouver ça, euh bravo</p>
     </header>
-    <section id="tableaubdd">
+    <section id="guest-table">
+         <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Participation</th>
+                    <th>Jusqu'a quand?</th>
+                    <th>Couchage?</th>
+                </tr>
+            </thead>
+            <tbody id="guest-data">
+                <!-- Les données des invités seront ajoutées ici -->
+            </tbody>
+        </table>
     </section>
     <section id="retour">
     <p><a href="index.html">Retour à la page d'acceuil</a></p>
     </section>    
+    <script src="script-base.js"></script>
+</body>
+</html>
+
+
+    
+  
+    <section id="guest-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Nombre d'invités</th>
+                    <!-- Ajoutez d'autres colonnes au besoin -->
+                </tr>
+            </thead>
+            <tbody id="guest-data">
+                <!-- Les données des invités seront ajoutées ici -->
+            </tbody>
+        </table>
+    </section>
     <script src="script-base.js"></script>
 </body>
 </html>
