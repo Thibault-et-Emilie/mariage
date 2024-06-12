@@ -191,6 +191,7 @@ form button {
     height: 0;
     padding-bottom: 56.25%; /* Proportion 16:9 */
     position: relative;
+    min-height: 80px
 }
 #carte iframe {
     position: absolute;
