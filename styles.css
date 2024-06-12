@@ -38,9 +38,9 @@ h1 {
 }
 
 section {
-    margin: 20px;
+    margin: 0px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Légère transparence pour les sections */
+    background: rgba(190, 165, 210, 0.8); /* Légère transparence pour les sections */
     border-radius: 60px;
     position: relative;
     z-index: 2;
@@ -96,7 +96,7 @@ form button {
     height: 100%;
     flex-wrap: wrap;
     text-align: center;
-    background-color: rgba(190, 100, 250, 0.8);
+    background-color: rgba(190, 165, 210, 0.8);
     padding-top: 80px; /* Même hauteur que le header pour éviter de cacher le contenu */
     z-index: 20; /* Pour s'assurer que le menu apparaît au-dessus de tout */
     transition: transform 0.6s ease-in-out;
