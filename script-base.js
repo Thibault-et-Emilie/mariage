@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         guestTable.appendChild(row);
     }
 
-    // Écouteur d'événements pour la soumission du formulaire
+    // Écouteur d'événements pour la soumission du formulairee
     document.getElementById('rsvp-form').addEventListener('submit', function (event) {
         event.preventDefault();
 
