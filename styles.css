@@ -21,7 +21,10 @@ header.large-header {
     
 }
 header.small-header {
-    background: transparent; /* Utilisation de rgba pour une transparence */
+    background-image: url('background.jpg'); /* Ajoute ton image de fond ici */
+    background-attachment: fixed; /* Pour l'effet de défilement parallaxe */
+    background-size: cover; /* Pour couvrir tout l'écran */
+    background-position: center; /* Centre l'image de fond */
     color: white;
     padding-top: 5em;
     padding-bottom: 15em;
@@ -40,7 +43,6 @@ h1 {
 section {
     margin: 0px;
     padding: 20px;
-    background: rgba(190, 165, 210, 0.8); /* Légère transparence pour les sections */
     border-radius: 60px;
     position: relative;
     z-index: 2;
@@ -96,7 +98,7 @@ form button {
     height: 100%;
     flex-wrap: wrap;
     text-align: center;
-    background-color: rgba(190, 165, 210, 0.8);
+    background-color: rgba(190, 165, 210, 0.9);
     padding-top: 80px; /* Même hauteur que le header pour éviter de cacher le contenu */
     z-index: 20; /* Pour s'assurer que le menu apparaît au-dessus de tout */
     transition: transform 0.6s ease-in-out;
@@ -139,8 +141,29 @@ form button {
     cursor: pointer;
 }
 
+#notre-histoire {
+    background: rgba(190, 165, 210, 0.6); /* Légère transparence pour les sections */
+}
+
+#details {
+    background: rgba(190, 165, 210, 0.6); /* Légère transparence pour les sections */
+}
+
+#rsvp {
+    background: rgba(250, 60, 60, 0.6); /* Légère transparence pour les sections */
+}
+
+#checklist{
+    background: rgba(70, 125, 240, 0.6); /* Légère transparence pour les sections */
+}
+
+#contact {
+    background: rgba(190, 165, 210, 0.6); /* Légère transparence pour les sections */
+}
+
 /* Styles pour la galerie */
 #gallery {
+    background: rgba(190, 165, 210, 0.6); /* Légère transparence pour les sections */
     padding: 2em;
     text-align: center;
 }
@@ -162,13 +185,14 @@ form button {
     transform: scale(1.2);
 }
 
-#map {
+#carte {
+    background: rgba(255, 255, 255, 0.6); /* Légère transparence pour les sections */
     width: 100%;
     height: 0;
     padding-bottom: 56.25%; /* Proportion 16:9 */
     position: relative;
 }
-#map iframe {
+#carte iframe {
     position: absolute;
     top: 0;
     left: 0;
