@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const dureesejour = getRadioValue('stay-duration');
             const couchage = getRadioValue('hebergement');
 
-            const formData = { name, email, participate, guests };
+            const formData = { name, email, participate, dureesejour, couchage };
             localStorage.setItem('formData', JSON.stringify(formData));
         }
 
