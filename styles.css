@@ -3,6 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: rgba(218, 230, 210, 1)
     
 }
 
@@ -33,7 +34,7 @@ header.large-header {
 }
 
 header.small-header {
-    background-image: url('background.jpg'); /* Ajoute ton image de fond ici */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),url('background.jpg'); /* Ajoute ton image de fond ici */
     background-attachment: fixed; /* Pour l'effet de défilement parallaxe */
     background-size: cover; /* Pour couvrir tout l'écran */
     background-position: center; /* Centre l'image de fond */
@@ -53,10 +54,10 @@ h1 {
 }
 
 section {
-    margin: 0px;
+    margin: 10px;
     padding-top: 10px;
     padding-bottom:10px;
-    border-radius: 0px;
+    border-radius: 50px;
     position: relative;
     z-index: 2;
     text-align: center;
@@ -155,28 +156,28 @@ form button {
 }
 
 #notre-histoire {
-    background: rgba(125, 190, 145, 0.6); /* Légère transparence pour les sections */
+    background: rgba(125, 190, 145, 0.5); /* Légère transparence pour les sections */
 }
 
 #details {
-    background: rgba(190, 165, 210, 0.6); /* Légère transparence pour les sections */
+    background: rgba(190, 165, 210, 0.5); /* Légère transparence pour les sections */
 }
 
 #rsvp {
-    background: rgba(250, 60, 60, 0.6); /* Légère transparence pour les sections */
+    background: rgba(250, 60, 60, 0.5); /* Légère transparence pour les sections */
 }
 
 #checklist{
-    background: rgba(70, 125, 240, 0.6); /* Légère transparence pour les sections */
+    background: rgba(70, 125, 240, 0.5); /* Légère transparence pour les sections */
 }
 
 #contact {
-    background: rgba(190, 165, 210, 0.6); /* Légère transparence pour les sections */
+    background: rgba(190, 165, 210, 0.5); /* Légère transparence pour les sections */
 }
 
 /* Styles pour la galerie */
 #gallery {
-    background: rgba(190, 165, 210, 0.6); /* Légère transparence pour les sections */
+    background: rgba(190, 165, 210, 0.5); /* Légère transparence pour les sections */
     padding: 2em;
     text-align: center;
 }
@@ -199,8 +200,7 @@ form button {
 }
 
 #carte {
-    background: rgba(255, 255, 255, 0.6); /* Légère transparence pour les sections */
-    width: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Légère transparence pour les sections */
     height: 0;
     padding-bottom: 56.25%; /* Proportion 16:9 */
     position: relative;
