@@ -42,7 +42,8 @@ h1 {
 
 section {
     margin: 0px;
-    padding: 0px;
+    padding-top: 10px;
+    padding-bottom:10px;
     border-radius: 0px;
     position: relative;
     z-index: 2;
