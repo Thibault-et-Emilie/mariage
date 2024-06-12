@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Écouteur d'événements pour la soumission du formulaire
-    document.querySelector('section#rsvp #envoyer').addEventListener('click', function() {
+    document.querySelector('section#rsvp button#envoyer').addEventListener('click', function() {
     // Code à exécuter lors du clic sur l'élément
 
         
