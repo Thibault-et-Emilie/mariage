@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         row.innerHTML = `
             <td>${name}</td>
             <td>${email}</td>
-            <td>$(bed)<td/>
+           
             <!-- Ajoutez d'autres cellules de données au besoin -->
         `;
         guestTable.appendChild(row);
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Récupérer les valeurs des champs du formulaire
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
-        const bed = document.getElementById('guests').value;
+       
 
         // Ajouter les données au tableau
         addGuestToTable(name, email, bed);
