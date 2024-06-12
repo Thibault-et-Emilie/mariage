@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Écouteur d'événements pour la soumission du formulaire
-    document.getElementById('rsvp-form').addEventListener('submit', function (event) {
-        event.preventDefault();
+    document.getElementById('submit').addEventListener('click', function() {
+        
 
         // Récupérer les valeurs des champs du formulaire
         const name = document.getElementById('name').value;
