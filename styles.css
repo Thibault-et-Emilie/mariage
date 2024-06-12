@@ -43,7 +43,7 @@ h1 {
 section {
     margin: 0px;
     padding: 20px;
-    border-radius: 60px;
+    border-radius: 0px;
     position: relative;
     z-index: 2;
     text-align: center;
@@ -142,7 +142,7 @@ form button {
 }
 
 #notre-histoire {
-    background: rgba(190, 165, 210, 0.6); /* Légère transparence pour les sections */
+    background: rgba(125, 190, 145, 0.6); /* Légère transparence pour les sections */
 }
 
 #details {
