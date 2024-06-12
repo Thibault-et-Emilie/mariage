@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const guestTable = document.getElementById('guest-data');
 
     // Fonction pour ajouter une ligne au tableau
-    function addGuestToTable(name, email, numGuests) {
+    function addGuestToTable(name, email, bed) {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${name}</td>
