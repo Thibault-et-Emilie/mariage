@@ -37,8 +37,38 @@
             <div>
                 <input type="radio" id="participate-no" name="participate" value="non" required>
                 <label for="participate-no">Non</label>
+                
+            <div id="stay-options" style="display: none;">
+                <label>Super ! Combien de temps resterez-vous pour profiter avec nous ?</label>
+                <div>
+                    <input type="radio" id="stay-4" name="stay-duration" value="Tout le séjour!">
+                    <label for="stay-4">Tout le séjour !</label>
+                </div>
+                <div>
+                    <input type="radio" id="stay-3" name="stay-duration" value="Jusqu'au jeudi soir">
+                    <label for="stay-3">Jusqu'au jeudi soir</label>
+                </div>
+                <div>
+                    <input type="radio" id="stay-2" name="stay-duration" value="Jusqu'au jeudi midi">
+                    <label for="stay-2">Jusqu'au jeudi midi</label>
+                </div>
+                <div>
+                    <input type="radio" id="stay-1" name="stay-duration" value="Seulement la première soirée">
+                    <label for="stay-1">Seulement la première soirée</label>
+                </div>
             </div>
-
+                <div id="souhait-hebergement" style="display: none;">
+                <label><p>Est-ce que vous souhaiteriez avoir un hébergement sur le lieu du mariage ?</p><p>Nous demanderons une participation de 60€/pers pour la durée du séjour pour réserver votre chambre/appartement</p></label>
+                <div>
+                    <input type="radio" id="hebergement-oui" name="hebergement" value="Oui, comment on fait pour le paiement?">
+                    <label for="hebergement-oui">Oui, comment on fait pour le paiement?</label>
+                </div>
+                <div>
+                    <input type="radio" id="hebergement-non" name="hebergement" value="Non merci!">
+                    <label for="hebergement-non">Non merci</label>
+                </div>
+                    
+            </div>
             <button type="submit">Envoyer</button>
         </form>
         <p id="response"></p>
