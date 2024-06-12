@@ -28,25 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     
-    document.getElementById('rsvp-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const guests = document.getElementById('guests').value;
-        const participate = document.querySelector('input[name="participate"]:checked').value;
-
-        const guestNames = [];
-        document.querySelectorAll('input[name="guest-names[]"]').forEach(function(input) {
-            guestNames.push(input.value);
-        });
-
-        console.log('Nom:', name);
-        console.log('Email:', email);
-        console.log('Nombre d\'invités:', guests);
-        console.log('Participation:', participate);
-        console.log('Prénoms des invités:', guestNames.join(', '));
-
+    document.getElementById('submit').addEventListener('click', function() {
         document.getElementById('response').innerText = 'Merci pour votre réponse!';
     });
 
