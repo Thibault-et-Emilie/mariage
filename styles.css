@@ -20,6 +20,20 @@ header.large-header {
     font-size: xx-large
     
 }
+.milestone {
+    background: transparent; /* Couleur de fond du cadre */
+    color: #fff;
+    padding: 20px;
+    border-radius: 50% 50% 0 0; /* Coins arrondis en haut */
+    border: 4px solid #fff;
+    max-width: 80% ;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    box-sizing: border-box; /* Inclure le padding dans la largeur */
+}
+
 header.small-header {
     background-image: url('background.jpg'); /* Ajoute ton image de fond ici */
     background-attachment: fixed; /* Pour l'effet de défilement parallaxe */
