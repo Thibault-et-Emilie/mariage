@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
          alert(guestname);
-         alert(hebergement);
+         alert(couchage);
 
         // Réinitialiser le formulaire
         //this.reset();
