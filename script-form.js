@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const nombreinviteplus = document.getElementById('guests').value;
         for (let i =0; i < nombreinviteplus; i++) {
 
-            if (i=0) {
+            if (i === 0) {
                 const guestname = document.getElementById('name').value;
             } else {
                 const guestname = document.getElementById(`guest-name-${i}`).value;
