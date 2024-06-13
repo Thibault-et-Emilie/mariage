@@ -68,26 +68,27 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let i =0; i < nombreinviteplus; i++) {
 
             if (i=0) {
-                const name = document.getElementById('name').value;
+                const guestname = document.getElementById('name').value;
             } else {
-                const name = document.getElementById(`guest-name-${i}`).value;
+                const guestname = document.getElementById(`guest-name-${i}`).value;
             }
             const email = document.getElementById('email').value;
             const participate = getRadioValue('participate');
             const dureesejour = getRadioValue('stay-duration');
             const couchage = getRadioValue('hebergement');
 
-            const formData = { name, email, participate, dureesejour, couchage };
-            localStorage.setItem('formData', JSON.stringify(formData));
+            //const formData = { guestname, email, participate, dureesejour, couchage };
+            //localStorage.setItem('formData', JSON.stringify(formData));
         }
 
-         alert(formData);
+         alert(guestname);
+         alert(hebergement);
 
         // Réinitialiser le formulaire
         //this.reset();
         //guestNamesContainer.innerHTML = ''; // Réinitialiser les champs de prénoms supplémentaires
 
-         document.getElementById('response').innerText = 'Merci pour votre réponse!';
+         //document.getElementById('response').innerText = 'Merci pour votre réponse!';
     
     });
 });
