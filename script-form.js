@@ -81,9 +81,11 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('formData', JSON.stringify(formData));
         }
 
+         alert(formData);
+
         // Réinitialiser le formulaire
-        this.reset();
-        guestNamesContainer.innerHTML = ''; // Réinitialiser les champs de prénoms supplémentaires
+        //this.reset();
+        //guestNamesContainer.innerHTML = ''; // Réinitialiser les champs de prénoms supplémentaires
 
          document.getElementById('response').innerText = 'Merci pour votre réponse!';
     
