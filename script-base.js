@@ -18,9 +18,17 @@ document.addEventListener('DOMContentLoaded', function () {
    // Récupérer les données du LocalStorage
     let storedformData = JSON.parse(localStorage.getItem('formData'));
     console.log(storedFormData);
-    for (let i=0 ; 10 ; i++)  {
-    addGuestToTable(storedFormData[i].guestname, storedFormData[i].email, storedFormData[i].participate, storedFormData[i].dureesejour, storedFormData[i].couchage);
+   if (storedFormData && storedFormData.length > 0) {
+    for (let i = 0; i < 10; i++) {
+        addGuestToTable(
+            storedFormData[i].guestname,
+            storedFormData[i].email,
+            storedFormData[i].participate,
+            storedFormData[i].dureesejour,
+            storedFormData[i].couchage
+        );
     }
+
        
 
         // Supprimer les données du LocalStorage après les avoir utilisées
