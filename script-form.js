@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const stayOptions = document.getElementById('stay-options');
     const stayAnswer = document.querySelectorAll('input[name="stay-duration"]');
     const hebergement = document.getElementById('souhait-hebergement');
-    const guestname;
-    const email;
-    const participate;
-    const dureesejour;
-    const couchage;
+    let guestname;
+    let email;
+    let participate;
+    let dureesejour;
+    let couchage;
 
         guestsInput.addEventListener('input', function() {
             // Vider le conteneur des prénoms des invités
@@ -74,14 +74,14 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let i =0; i < nombreinviteplus; i++) {
 
             if (i === 0) {
-                const guestname = document.getElementById('name').value;
+                guestname = document.getElementById('name').value;
             } else {
-                const guestname = document.getElementById(`guest-name-${i}`).value;
+                guestname = document.getElementById(`guest-name-${i}`).value;
             }
-            const email = document.getElementById('email').value;
-            const participate = getRadioValue('participate');
-            const dureesejour = getRadioValue('stay-duration');
-            const couchage = getRadioValue('hebergement');
+            email = document.getElementById('email').value;
+            participate = getRadioValue('participate');
+            dureesejour = getRadioValue('stay-duration');
+            couchage = getRadioValue('hebergement');
 
             //const formData = { guestname, email, participate, dureesejour, couchage };
             //localStorage.setItem('formData', JSON.stringify(formData));
