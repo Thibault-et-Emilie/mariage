@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let participate;
     let dureesejour;
     let couchage;
+    let formData = [];
 
         guestsInput.addEventListener('input', function() {
             // Vider le conteneur des prénoms des invités
@@ -83,12 +84,13 @@ document.addEventListener('DOMContentLoaded', function() {
             dureesejour = getRadioValue('stay-duration');
             couchage = getRadioValue('hebergement');
 
-            const formData = { guestname, email, participate, dureesejour, couchage };
-            localStorage.setItem('formData', JSON.stringify(formData));
+            formData[i] = { guestname, email, participate, dureesejour, couchage };
+            
         }
-
-         alert(guestname);
-         alert(couchage);
+        localStorage.setItem('formData', JSON.stringify(formData));
+         
+        alert(guestname);
+        alert(couchage);
 
         // Réinitialiser le formulaire
         //this.reset();
