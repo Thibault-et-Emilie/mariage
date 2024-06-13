@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const stayOptions = document.getElementById('stay-options');
     const stayAnswer = document.querySelectorAll('input[name="stay-duration"]');
     const hebergement = document.getElementById('souhait-hebergement');
+    const guestname;
+    const email;
+    const participate;
+    const dureesejour;
+    const couchage;
 
         guestsInput.addEventListener('input', function() {
             // Vider le conteneur des prénoms des invités
