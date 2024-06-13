@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
    // Récupérer les données du LocalStorage
-    let storedformData = JSON.parse(localStorage.getItem('formData'));
+    let storedFormData = JSON.parse(localStorage.getItem('formData'));
     console.log(storedFormData);
    if (storedFormData && storedFormData.length > 0) {
     for (let i = 0; i < 10; i++) {
