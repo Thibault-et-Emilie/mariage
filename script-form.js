@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 stayOptions.style.display = 'block';
             } else {
                 stayOptions.style.display = 'none';
+                hebergement.style.display = 'none';
             }
         });
     });
@@ -45,11 +46,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Gérer l'affichage des options d'hébergement
     stayAnswer.forEach(function (radio) {
         radio.addEventListener('change', function () {
-            if (document.getElementById('stay-1').checked) {
-                hebergement.style.display = 'none';
-            } else {
-                hebergement.style.display = 'block';
-            }
+                if (document.getElementById('stay-1').checked) {
+                    hebergement.style.display = 'none';
+                } else {
+                    hebergement.style.display = 'block';
+                }
         });
     });
 
