@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (i=0) {
                 const guestname = document.getElementById('name').value;
             } else {
-                const guestname = document.getElementById('guest-name-${i}').value;
+                const guestname = document.getElementById(`guest-name-${i}`).value;
             }
             const email = document.getElementById('email').value;
             const participate = getRadioValue('participate');
