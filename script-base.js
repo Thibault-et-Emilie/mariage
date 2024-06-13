@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     const guestTable = document.getElementById('guest-data');
-    let formData = [] ;
 
     // Fonction pour ajouter une ligne au tableau
     function addGuestToTable(guestname, email, participate, dureesejour, couchage) {
@@ -17,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
    // Récupérer les données du LocalStorage
-    formData = JSON.parse(localStorage.getItem('formData'));
-    if (formData) {
-        for (let i=0 ; 10 ; i++)  {
-        addGuestToTable(formData[i].guestname, formData[i].email, formData[i].participate, formData[i].dureesejour, formData[i].couchage);
-        }
+    let storedformData = JSON.parse(localStorage.getItem('formData'));
+    console.log(storedFormData);
+    for (let i=0 ; 10 ; i++)  {
+    addGuestToTable(storedFormData[i].guestname, storedFormData[i].email, storedFormData[i].participate, storedFormData[i].dureesejour, storedFormData[i].couchage);
+    }
        
 
         // Supprimer les données du LocalStorage après les avoir utilisées
