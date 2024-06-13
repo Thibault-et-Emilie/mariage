@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Ajouter des champs de prénom en fonction du nombre d'invités
             for (let i = 1; i < numGuests; i++) {
                 const label = document.createElement('label');
-                label.setAttribute('for', `guest-name-${i+1}`);
+                label.setAttribute('for', `guest-name-${i}`);
                 label.textContent = `Prénom et nom de l'invité ${i+1}:`;
 
                 const input = document.createElement('input');
