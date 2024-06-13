@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const guestTable = document.getElementById('guest-data');
+    const guestTable = document.getElementById('guest-data').querySelector('tbody');
 
     // Fonction pour ajouter une ligne au tableau
     function addGuestToTable(guestname, email, participate, dureesejour, couchage) {
