@@ -48,7 +48,7 @@ header.small-header {
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: 'Montserrat', sans-serif;
     margin: 20px 0;
     font-size: xxx-large;
@@ -67,8 +67,10 @@ section {
 }
 
 h2 {
+    font-family: 'Montserrat', sans-serif;
     /*color: #D78CF8;*/
     color: rgba(204, 128, 105, 0.9);
+    font-size: x-large;
 }
 
 form {
