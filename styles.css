@@ -3,15 +3,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: rgba(218, 230, 210, 1)
-    
-}
-
-header.large-header {
+    /*background-color: rgba(218, 230, 210, */
     background-image: url('background.jpg'); /* Ajoute ton image de fond ici */
     background-attachment: fixed; /* Pour l'effet de défilement parallaxe */
     background-size: cover; /* Pour couvrir tout l'écran */
     background-position: center; /* Centre l'image de fond */
+    
+}
+
+header.large-header {
     color: white;
     padding-top: 8em;
     padding-bottom:10em;
@@ -51,7 +51,6 @@ header.small-header {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     margin: 20px 0;
-    color: white;
     font-size: xxx-large;
 }
 
@@ -68,7 +67,8 @@ section {
 }
 
 h2 {
-    color: #D78CF8;
+    /*color: #D78CF8;*/
+    color: rgba(204, 128, 105, 0.9);
 }
 
 form {
@@ -160,11 +160,11 @@ form input, form button {
 }
 
 #notre-histoire {
-    background: rgba(125, 190, 145, 0.5); /* Légère transparence pour les sections */
+    background: rgba(253, 240, 231, 0.8); /* Légère transparence pour les sections */
 }
 
 #details {
-    background: rgba(190, 165, 210, 0.5); /* Légère transparence pour les sections */
+    background: rgba(253, 240, 231, 0.8); /* Légère transparence pour les sections */
 }
 
 #rsvp {
