@@ -1,5 +1,5 @@
 body {
-    font-family: 'Baskervville', serif;
+    font-family: 'Raleway', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -48,8 +48,10 @@ header.small-header {
 
 }
 
-h1 {
-    font-family: 'Courier Prime', cursive; /* Applique la police de style machine à écrire uniquement à h1 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+    color: #2c3e50;
     font-size: xxx-large;
 }
 
