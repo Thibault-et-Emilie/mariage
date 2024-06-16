@@ -22,7 +22,7 @@ header.large-header {
     
 }
 .milestone {
-    background: transparent; /* Couleur de fond du cadre */
+    background: rgba(250, 60, 60, 0.5);
     color: #fff;
     padding: 20px;
     border: 4px solid #fff;
