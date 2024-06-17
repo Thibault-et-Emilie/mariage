@@ -184,7 +184,7 @@ form input, form button {
 
 /* Styles pour la galerie */
 #gallery {
-    background: rgba(190, 165, 210, 0.5); /* Légère transparence pour les sections */
+    background: transparent; /* Légère transparence pour les sections */
     padding: 2em;
     text-align: center;
 }
@@ -207,7 +207,7 @@ form input, form button {
 }
 
 #carte {
-    background: rgba(255, 255, 255, 0.5); /* Légère transparence pour les sections */
+    background: transparent; /* Légère transparence pour les sections */
     height: 0;
     padding-bottom: 56.25%; /* Proportion 16:9 */
     position: relative;
