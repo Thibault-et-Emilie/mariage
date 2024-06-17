@@ -196,7 +196,7 @@ form input, form button {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
      h2 {
     font-family: 'Courier New', monospace;
-    font-size: x-large;
+    font-size: xx-large;
     color: rgba(217, 52, 62, 1);
     }
     h3 {
@@ -208,14 +208,29 @@ form input, form button {
 
 #rsvp {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
+    h2 {
+        font-family: 'Courier New', monospace;
+        font-size: xx-large;
+        color: rgba(147, 127, 213, 1);
+    }
 }
 
 #checklist{
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
+    h2 {
+        font-family: 'Courier New', monospace;
+        font-size: xx-large;
+        color: rgba(242, 124, 19, 1);
+    }
 }
 
 #contact {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
+    h2 {
+        font-family: 'Courier New', monospace;
+        font-size: xx-large;
+        color: rgba(50, 39, 239, 1);
+        }
 }
 
 /* Styles pour la galerie */
@@ -223,6 +238,11 @@ form input, form button {
     background: transparent; /* Légère transparence pour les sections */
     padding: 2em;
     text-align: center;
+    h2 {
+        font-family: 'Courier New', monospace;
+        font-size: xx-large;
+        color: rgba(244, 189, 65, 1);
+    }
 }
 
 .gallery {
@@ -248,6 +268,11 @@ form input, form button {
     padding-bottom: 56.25%; /* Proportion 16:9 */
     position: relative;
     min-height: 80px
+    h2 {
+        font-family: 'Courier New', monospace;
+        font-size: xx-large;
+        color: white;
+        }
 }
 #carte iframe {
     position: absolute;
