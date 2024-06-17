@@ -105,8 +105,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
         }
         //localStorage.setItem('formData', JSON.stringify(formData));
-         formData.forEach(function(entry) {
-                    db.collection("formData").add(entry)
+         formData.forEach(data => {
+                    db.collection("formData").add(data)
                         .then((docRef) => {
                             console.log("Document written with ID: ", docRef.id);
                         })
