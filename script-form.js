@@ -101,10 +101,12 @@ document.addEventListener('DOMContentLoaded', function() {
             dureesejour = getRadioValue('stay-duration');
             couchage = getRadioValue('hebergement');
 
-            formData.push({ guestname, email, participate, dureesejour, couchage });
+            //formData.push({ guestname, email, participate, dureesejour, couchage });
             
         }
-        //localStorage.setItem('formData', JSON.stringify(formData));
+         formData={ guestname, email, participate, dureesejour, couchage };
+         alert(formData);
+                 //localStorage.setItem('formData', JSON.stringify(formData));
          formData.forEach(data => {
                     db.collection("formData").add(data)
                         .then((docRef) => {
