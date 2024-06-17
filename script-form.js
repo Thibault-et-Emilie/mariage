@@ -1,3 +1,19 @@
+
+    // Configuration Firebase
+    const firebaseConfig = {
+  apiKey: "AIzaSyBxPNR1MY12kw9EdeEl3FEWk3iRKS0zvtc",
+  authDomain: "mariage-emilie-thibault.firebaseapp.com",
+  projectId: "mariage-emilie-thibault",
+  storageBucket: "mariage-emilie-thibault.appspot.com",
+  messagingSenderId: "645427117758",
+  appId: "1:645427117758:web:01c156875092c98e1be8ef",
+  measurementId: "G-V2TJ5TMFKE"
+};
+    // Initialiser Firebase
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore()
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const guestsInput = document.getElementById('guests');
     const guestNamesContainer = document.getElementById('guest-names');
@@ -72,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
      document.getElementById('envoyer').addEventListener('click', function() {
         
         const nombreinviteplus = document.getElementById('guests').value;
+        formData = []; // Réinitialiser le tableau formData
         for (let i =0; i < nombreinviteplus; i++) {
 
             if (i === 0) {
@@ -84,19 +101,26 @@ document.addEventListener('DOMContentLoaded', function() {
             dureesejour = getRadioValue('stay-duration');
             couchage = getRadioValue('hebergement');
 
-            formData[i] = { guestname, email, participate, dureesejour, couchage };
+            formData.push({ guestname, email, participate, dureesejour, couchage });
             
         }
-        localStorage.setItem('formData', JSON.stringify(formData));
-         
-        alert(guestname);
-        alert(couchage);
+        //localStorage.setItem('formData', JSON.stringify(formData));
+         formData.forEach(function(entry) {
+                    db.collection("formData").add(entry)
+                        .then((docRef) => {
+                            console.log("Document written with ID: ", docRef.id);
+                        })
+                        .catch((error) => {
+                            console.error("Error adding document: ", error);
+                        });
+                });
+        
 
         // Réinitialiser le formulaire
         //this.reset();
         //guestNamesContainer.innerHTML = ''; // Réinitialiser les champs de prénoms supplémentaires
 
-         //document.getElementById('response').innerText = 'Merci pour votre réponse!';
+         document.getElementById('response').innerText = 'Merci pour votre réponse!';
     
     });
 });
