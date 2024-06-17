@@ -104,16 +104,16 @@ document.addEventListener('DOMContentLoaded', function() {
             //formData.push({ guestname, email, participate, dureesejour, couchage });
             
         }
-         alert(dureesejour);
+         alert(couchage);
          
                  //localStorage.setItem('formData', JSON.stringify(formData));
          
         // formData.forEach(data => {
                     db.collection("formData").add({
-                        name: guestname,
+                       
                         email: email,
-                        presence: participate,
-                        duree: dureesejour,
+                        
+                        
                         couchage: couchage
                     })
                         .then((docRef) => {
