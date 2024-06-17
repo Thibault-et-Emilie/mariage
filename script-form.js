@@ -11,7 +11,7 @@ const firebaseConfig = {
 };
     // Initialiser Firebase
     firebase.initializeApp(firebaseConfig);
-    var db = firebase.firestore()
+    const db = firebase.firestore()
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -104,8 +104,10 @@ document.addEventListener('DOMContentLoaded', function() {
             //formData.push({ guestname, email, participate, dureesejour, couchage });
             
         }
+         alert(dureesejour);
          
                  //localStorage.setItem('formData', JSON.stringify(formData));
+         
         // formData.forEach(data => {
                     db.collection("formData").add({
                         name: guestname,
