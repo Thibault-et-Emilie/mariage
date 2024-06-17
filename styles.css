@@ -189,7 +189,11 @@ form input, form button {
 
 #notre-histoire {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
-   
+    h2 {
+        font-family: 'Courier New', monospace;
+        font-size: xx-large;
+        color: rgba(147, 127, 213, 1);
+        }
 }
 
 #details {
