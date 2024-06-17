@@ -1,6 +1,6 @@
 
     // Configuration Firebase
-    const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyBxPNR1MY12kw9EdeEl3FEWk3iRKS0zvtc",
   authDomain: "mariage-emilie-thibault.firebaseapp.com",
   projectId: "mariage-emilie-thibault",
