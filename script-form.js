@@ -104,18 +104,23 @@ document.addEventListener('DOMContentLoaded', function() {
             //formData.push({ guestname, email, participate, dureesejour, couchage });
             
         }
-         formData={ guestname, email, participate, dureesejour, couchage };
-         alert(formData);
+         
                  //localStorage.setItem('formData', JSON.stringify(formData));
-         formData.forEach(data => {
-                    db.collection("formData").add(data)
+        // formData.forEach(data => {
+                    db.collection("formData").add({
+                        name: guestname,
+                        email: email,
+                        presence: participate,
+                        duree: dureesejour,
+                        couchage: couchage
+                    })
                         .then((docRef) => {
-                            console.log("Document written with ID: ", docRef.id);
+                           alert("Données envoyées!");
                         })
                         .catch((error) => {
                             console.error("Error adding document: ", error);
                         });
-                });
+    });
         
 
         // Réinitialiser le formulaire
