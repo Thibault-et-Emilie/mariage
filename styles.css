@@ -48,12 +48,42 @@ header.small-header {
 
 }
 
-h1 {
+
+}
+.superposed-title {
     font-family: 'Montserrat', sans-serif;
-    margin: 20px 0;
-    font-size: xxx-large;
+    position: relative;
+    display: inline-block;
+    line-height: 1.2; /* Hauteur de ligne pour espacement vertical */
 }
 
+.superposed-title .line1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: xx-large; /* Taille du texte */
+    color: white; /* Utiliser la même couleur que le parent */
+}
+}
+.superposed-title .line2 {
+    position: absolute;
+    /*opacity: 0.7;*/
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: xxx-large; /* Taille du texte */
+    color: rgba(250, 90, 60, 0.7);
+}
+
+.superposed-title .line3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: xx-large; /* Taille du texte */
+    color: white; /* Utiliser la même couleur que le parent */
+}
 
 
 section {
