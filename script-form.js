@@ -21,12 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const stayOptions = document.getElementById('stay-options');
     const stayAnswer = document.querySelectorAll('input[name="stay-duration"]');
     const hebergement = document.getElementById('souhait-hebergement');
-    let guestname;
-    let email;
-    let participate;
-    let dureesejour;
-    let couchage;
-    let formData = [];
+    
 
         guestsInput.addEventListener('input', function() {
             // Vider le conteneur des prénoms des invités
@@ -87,6 +82,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
      document.getElementById('rsvp-form').addEventListener('submit', function(event) {
         event.preventDefault();
+        let guestname;
+        let email;
+        let participate;
+        let dureesejour;
+        let couchage;
+        let formData = [];
         
         const nombreinviteplus = document.getElementById('guests').value;
         formData = []; // Réinitialiser le tableau formData
