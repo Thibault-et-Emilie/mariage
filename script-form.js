@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', function() {
         let participate;
         let dureesejour;
         let couchage;
-        let formData = [];
+        //let formData = [];
         
         const nombreinviteplus = document.getElementById('guests').value;
-        formData = []; // Réinitialiser le tableau formData
+        //formData = []; 
         for (let i =0; i < nombreinviteplus; i++) {
 
             if (i === 0) {
