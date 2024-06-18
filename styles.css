@@ -56,30 +56,31 @@ header.small-header {
 .superposed-title .line1{
     font-family: 'Courier New', monospace;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: -107px;
     right: 0;
-    font-size: xxx-large; 
+    font-size: 60px; 
     color: white; 
+    
 }
 .superposed-title .line2 {
     font-family: 'Courier New', monospace;
     position: absolute;
-    /*opacity: 0.7;*/
     top: 0;
-    left: 0;
+    left:-38px;
     right: 0;
-    font-size: 40px; 
-    color: black;
+    font-size: 120px; 
+    //color: rgba(210, 50, 20, 0.7);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .superposed-title .line3 {
     font-family: 'Courier New', monospace;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 60px;
+    left:-145px;
     right: 0;
-    font-size: xxx-large;
+    font-size: 60px;
     color: white; 
 }
 
