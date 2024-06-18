@@ -34,106 +34,81 @@ header.large-header {
 }
 
 header.small-header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),url('background.jpg'); /* Ajoute ton image de fond ici */
-    background-attachment: fixed; /* Pour l'effet de défilement parallaxe */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),url('background.jpg'); 
+    background-attachment: fixed; 
     background-size: cover; /* Pour couvrir tout l'écran */
-    background-position: center; /* Centre l'image de fond */
+    background-position: center; 
     color: white;
     padding-top: 5em;
     padding-bottom: 15em;
     text-align: center;
     position: relative;
     z-index: 10;
-    
-
 }
 
 
-}
 .superposed-title {
-    font-family: 'Courier New', monospace;
     position: relative;
     display: inline-block;
     line-height: 1.2; /* Hauteur de ligne pour espacement vertical */
 }
 
 .superposed-title .line1{
-    position: relative;
+    font-family: 'Courier New', monospace;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    font-size: xxx-large; /* Taille du texte */
-    color: white; /* Utiliser la même couleur que le parent */
-}
+    font-size: xxx-large; 
+    color: white; 
 }
 .superposed-title .line2 {
-    position: relative;
+    font-family: 'Courier New', monospace;
+    position: absolute;
     /*opacity: 0.7;*/
     top: 0;
     left: 0;
     right: 0;
-    font-size: 30px; /* Taille du texte */
+    font-size: 40px; 
     color: black;
 }
 
 .superposed-title .line3 {
-    position: relative;
+    font-family: 'Courier New', monospace;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    font-size: xxx-large; /* Taille du texte */
-    color: white; /* Utiliser la même couleur que le parent */
+    font-size: xxx-large;
+    color: white; 
 }
 
-
-section {
-    font-size: large;
-    margin: 10px;
-    padding-top: 10px;
-    padding-bottom:10px;
-    border-radius: 50px;
-    position: relative;
-    z-index: 2;
-    text-align: center;
-}
-    
-}
-
-form {
-    display: flex;
-    flex-direction: column;
+/* Styles pour le bouton RSVP */
+.rsvp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    border: 4px solid #fff;
+    background: transparent;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 20px;
 }
 
-form label {
-    margin-top: 10px;
+.rsvp-button:link,
+.rsvp-button:visited {
+    color: #fff; /* White text color for normal and visited states */
+    text-decoration: none; /* Remove underline */
+}    
+.rsvp-button:hover {
+    transform: scale(1.2);
+}
+.rsvp-button:active {
+    color: #fff; /* Ensure text color stays white when active */
+    background: #666; /* Darker background on active */
 }
 
-form input, form button {
-    padding: 10px;
-    margin-top: 5px;
-}
-
-#submit {
-    background: #D78CF8;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#guest-names {
-    margin-top: 10px;
-}
-
-#guest-names label {
-    display: block;
-    margin-top: 10px;
-}
-
-#guest-names input {
-    padding: 10px;
-    margin-top: 5px;
-}
 
  /* Styles pour le menu de navigation */
     #main-nav {
@@ -185,6 +160,17 @@ form input, form button {
     border: none;
     font-size: 30px;
     cursor: pointer;
+}
+
+section {
+    font-size: large;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
 }
 
 #notre-histoire {
@@ -289,28 +275,38 @@ form input, form button {
     border: 0;
 }
 
-/* Styles pour le bouton RSVP */
-.rsvp-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
-    text-decoration: none;
-    border: 4px solid #fff;
-    background: transparent;
-    transition: background 0.3s, color 0.3s;
-    margin-top: 20px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.rsvp-button:link,
-.rsvp-button:visited {
-    color: #fff; /* White text color for normal and visited states */
-    text-decoration: none; /* Remove underline */
-}    
-.rsvp-button:hover {
-    transform: scale(1.2);
+form label {
+    margin-top: 10px;
 }
-.rsvp-button:active {
-    color: #fff; /* Ensure text color stays white when active */
-    background: #666; /* Darker background on active */
+
+form input, form button {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#submit {
+    background: #D78CF8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#guest-names {
+    margin-top: 10px;
+}
+
+#guest-names label {
+    display: block;
+    margin-top: 10px;
+}
+
+#guest-names input {
+    padding: 10px;
+    margin-top: 5px;
 }
