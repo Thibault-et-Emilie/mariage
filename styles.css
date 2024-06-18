@@ -224,6 +224,7 @@ section {
     background: transparent; /* Légère transparence pour les sections */
     padding: 2em;
     text-align: center;
+    color: color: rgba(244, 189, 65, 1);
     h2 {
         color: rgba(244, 189, 65, 1);
     }
