@@ -171,13 +171,19 @@ section {
     position: relative;
     z-index: 2;
     text-align: center;
+    h2 {
+        font-family: 'Courier New', monospace;
+        font-size: xx-large;
+    }
+    h3 {
+        font-family: 'Courier New', monospace;
+        font-size: xx-large;
+    }
 }
 
 #notre-histoire {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
     h2 {
-        font-family: 'Courier New', monospace;
-        font-size: xx-large;
         color: rgba(147, 127, 213, 1);
         }
 }
@@ -185,13 +191,9 @@ section {
 #details {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
      h2 {
-    font-family: 'Courier New', monospace;
-    font-size: xx-large;
     color: rgba(217, 52, 62, 1);
     }
     h3 {
-        font-family: 'Courier New', monospace;
-        font-size: xx-large;
         color: rgba(236, 81, 83, 1);
     }
 }
@@ -199,8 +201,6 @@ section {
 #rsvp {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
     h2 {
-        font-family: 'Courier New', monospace;
-        font-size: xx-large;
         color: rgba(147, 127, 213, 1);
     }
 }
@@ -208,8 +208,6 @@ section {
 #checklist{
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
     h2 {
-        font-family: 'Courier New', monospace;
-        font-size: xx-large;
         color: rgba(242, 124, 19, 1);
     }
 }
@@ -217,8 +215,6 @@ section {
 #contact {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
     h2 {
-        font-family: 'Courier New', monospace;
-        font-size: xx-large;
         color: rgba(50, 39, 239, 1);
         }
 }
@@ -229,8 +225,6 @@ section {
     padding: 2em;
     text-align: center;
     h2 {
-        font-family: 'Courier New', monospace;
-        font-size: xx-large;
         color: rgba(244, 189, 65, 1);
     }
 }
@@ -249,7 +243,7 @@ section {
 }
 
 .gallery img:hover {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 #carte {
@@ -259,11 +253,10 @@ section {
     position: relative;
     min-height: 80px
     h2 {
-        font-family: 'Courier New', monospace;
-        font-size: xx-large;
         color: white;
         }
 }
+
 #carte iframe {
     position: absolute;
     border-radius:20px;
