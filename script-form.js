@@ -85,7 +85,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         return null;
     }
-     document.getElementById('envoyer').addEventListener('click', function() {
+     document.getElementById('rsvp-form').addEventListener('submit', function(event) {
+        event.preventDefault();
         
         const nombreinviteplus = document.getElementById('guests').value;
         formData = []; // Réinitialiser le tableau formData
@@ -105,24 +106,23 @@ document.addEventListener('DOMContentLoaded', function() {
             
         }
          alert(couchage);
-         
-                 //localStorage.setItem('formData', JSON.stringify(formData));
+         const formData = {
+             guestname,
+             email,
+             participate,
+             dureesejour,
+             couchage
+         };
          
         // formData.forEach(data => {
-                    db.collection("formData").add({
-                       
-                        email: email,
-                        
-                        
-                        couchage: couchage
-                    })
+        db.collection("formData").add(formData)
                         .then((docRef) => {
-                           alert("Données envoyées!");
-                        })
-                        .catch((error) => {
-                            console.error("Error adding document: ", error);
-                        });
-     //});
+                document.getElementById('response').innerText = 'Merci pour votre réponse!';
+                console.log("Document written with ID: ", docRef.id);
+            })
+            .catch((error) => {
+                console.error("Error adding document: ", error);
+            });
         
 
         // Réinitialiser le formulaire
