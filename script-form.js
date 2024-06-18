@@ -113,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
              dureesejour,
              couchage
          };
+         alert(formData);
          
         // formData.forEach(data => {
         db.collection("formData").add(formData)
