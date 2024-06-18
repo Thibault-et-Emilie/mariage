@@ -251,7 +251,7 @@ section {
     height: 0;
     padding-bottom: 56.25%; /* Proportion 16:9 */
     position: relative;
-    min-height: 80px;
+    min-height: 200px;
     h2 {
         color: white;
         }
@@ -260,8 +260,10 @@ section {
 
 
 #carte iframe {
-    position: relative;
+    position: absolute;
     border-radius:20px;
+    top: 20% ;
+    bottom: 10% ;
     right: 10% ;
     width: 80%;
     height:70%;
