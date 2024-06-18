@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', function() {
         let participate;
         let dureesejour;
         let couchage;
-        //let formData = [];
+        let formData = [];
         
         const nombreinviteplus = document.getElementById('guests').value;
-        //formData = []; 
+        formData = []; 
         for (let i =0; i < nombreinviteplus; i++) {
 
             if (i === 0) {
@@ -103,20 +103,13 @@ document.addEventListener('DOMContentLoaded', function() {
             dureesejour = getRadioValue('stay-duration');
             couchage = getRadioValue('hebergement');
 
-            //formData.push({ guestname, email, participate, dureesejour, couchage });
+            formData.push({ guestname, email, participate, dureesejour, couchage });
             
         }
          alert(couchage);
-         const formData = {
-             guestname,
-             email,
-             participate,
-             dureesejour,
-             couchage
-         };
          alert(formData);
          
-        // formData.forEach(data => {
+        formData.forEach(data => {
         db.collection("formData").add(formData)
                         .then((docRef) => {
                 document.getElementById('response').innerText = 'Merci pour votre réponse!';
@@ -125,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch((error) => {
                 console.error("Error adding document: ", error);
             });
+        });
         
 
         // Réinitialiser le formulaire
