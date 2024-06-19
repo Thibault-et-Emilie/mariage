@@ -175,17 +175,20 @@ section {
     z-index: 2;
     text-align: center;
     h2 {
-        font-family: 'Courier New', monospace;
+        font-family: 'IBM Plex Serif', serif;
         font-size: xx-large;
+        font-weight: 400;
     }
     h3 {
-        font-family: 'Courier New', monospace;
+        font-family: 'IBM Plex Serif', serif;
         font-size: xx-large;
+        font-weight: 400;
     }
 }
 
 #notre-histoire {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
+    font-family: 'Special Elite', serif;
     h2 {
         color: rgba(147, 127, 213, 1);
         }
