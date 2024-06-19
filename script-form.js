@@ -106,8 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
             formData.push({ guestname, email, participate, dureesejour, couchage });
             
         }
-         alert(couchage);
-         alert(formData);
          
         formData.forEach(data => {
                 db.collection("formData").add(data)
