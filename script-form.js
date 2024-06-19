@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const stayOptions = document.getElementById('stay-options');
     const stayAnswer = document.querySelectorAll('input[name="stay-duration"]');
     const hebergement = document.getElementById('souhait-hebergement');
+    const reponsehebergement = document.querySelectorAll('input[name="hebergement"]');
     
 
         guestsInput.addEventListener('input', function() {
@@ -55,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 stayOptions.style.display = 'none';
                 hebergement.style.display = 'none';
+                pre-reponse.style.display = 'none';
             }
         });
     });
@@ -65,9 +67,21 @@ document.addEventListener('DOMContentLoaded', function() {
         radio.addEventListener('change', function () {
                 if (document.getElementById('stay-1').checked) {
                     hebergement.style.display = 'none';
+                    document.getElementById('pre-reponse').style.display = 'none';
                 } else {
                     hebergement.style.display = 'block';
                 }
+        });
+    });
+
+    // Gérer affichage de la petite réponse
+    reponsehebergement.forEach(function (radio) {
+        radio.addEventListener('change', function() {
+            if (document.getElementById('hebergement-oui').checked) {
+                document.getElementById('pre-reponse').style.display = 'block';
+            } else {
+                 document.getElementById('pre-reponse').style.display = 'none';
+            }
         });
     });
 
