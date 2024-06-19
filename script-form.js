@@ -110,20 +110,16 @@ document.addEventListener('DOMContentLoaded', function() {
          alert(formData);
          
         formData.forEach(data => {
-        db.collection("formData").add(formData)
+                db.collection("formData").add(data)
                         .then((docRef) => {
-                document.getElementById('response').innerText = 'Merci pour votre réponse!';
-                console.log("Document written with ID: ", docRef.id);
-            })
-            .catch((error) => {
-                console.error("Error adding document: ", error);
-            });
+                            document.getElementById('response').innerText = 'Merci pour votre réponse!';
+                            console.log("Document written with ID: ", docRef.id);
+                        })
+                        .catch((error) => {
+                        console.error("Error adding document: ", error);
+                        });
         });
         
-
-        // Réinitialiser le formulaire
-        //this.reset();
-        //guestNamesContainer.innerHTML = ''; // Réinitialiser les champs de prénoms supplémentaires
 
          document.getElementById('response').innerText = 'Merci pour votre réponse!';
     
