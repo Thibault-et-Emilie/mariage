@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 stayOptions.style.display = 'none';
                 hebergement.style.display = 'none';
-                pre-reponse.style.display = 'none';
+                prereponse.style.display = 'none';
             }
         });
     });
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         radio.addEventListener('change', function () {
                 if (document.getElementById('stay-1').checked) {
                     hebergement.style.display = 'none';
-                    document.getElementById('pre-reponse').style.display = 'none';
+                    prereponse.style.display = 'none';
                 } else {
                     hebergement.style.display = 'block';
                 }
@@ -79,9 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
     reponsehebergement.forEach(function (radio) {
         radio.addEventListener('change', function() {
             if (document.getElementById('hebergement-oui').checked) {
-                document.getElementById('pre-reponse').style.display = 'block';
+                prereponse.style.display = 'block';
             } else {
-                 document.getElementById('pre-reponse').style.display = 'none';
+                prereponse.style.display = 'none';
             }
         });
     });
