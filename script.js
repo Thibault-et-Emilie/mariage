@@ -1,18 +1,16 @@
 document.getElementById('menu-toggle').addEventListener('click', function() {
     document.getElementById('main-nav').classList.toggle('open'); // Ajoute ou retire la classe "open" pour afficher ou masquer le menu
 });
-// Sélectionne tous les éléments de lien dans le menu de navigation
+// chaque bouton du menu, si on clique dessus on enleve la classe"open"du menu
 const menuLinks = document.querySelectorAll('#main-nav ul li a');
 
-// Boucle à travers chaque lien du menu
 menuLinks.forEach(function(link) {
-    // Ajoute un événement de clic à chaque lien
     link.addEventListener('click', function() {
-        // Retire la classe 'open' du menu de navigation lorsque tu cliques sur un lien
         document.getElementById('main-nav').classList.remove('open');
     });
 })
 
+//on calcule la largeur du rectangle qui se définit en fonction de l'écran, puis on utilise cette valeur pour faire un demi cercle parfait
  function setMilestoneRadius() {
             const milestone = document.querySelector('.milestone');
             const width = milestone.offsetWidth;
