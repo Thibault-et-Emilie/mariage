@@ -1,5 +1,4 @@
 
-    // Configuration Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBxPNR1MY12kw9EdeEl3FEWk3iRKS0zvtc",
   authDomain: "mariage-emilie-thibault.firebaseapp.com",
@@ -9,7 +8,7 @@ const firebaseConfig = {
   appId: "1:645427117758:web:01c156875092c98e1be8ef",
   measurementId: "G-V2TJ5TMFKE"
 };
-    // Initialiser Firebase
+
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore()
 
@@ -30,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             guestNamesContainer.innerHTML = '';
             const numGuests = parseInt(guestsInput.value);
 
-            // Ajouter des champs de prénom en fonction du nombre d'invités
+            // Ajouter champs prénom en fonction du nombre d'invités en plus
             for (let i = 1; i < numGuests; i++) {
                 const label = document.createElement('label');
                 label.setAttribute('for', `guest-name-${i}`);
@@ -49,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
 
- // Gérer l'affichage des options de durée de séjour
+ // si changement de bouton radio sur particpation, alors on affiche la suite ou pas
     participateRadios.forEach(function (radio) {
         radio.addEventListener('change', function () {
             if (document.getElementById('participate-yes').checked) {
@@ -63,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-    // Gérer l'affichage des options d'hébergement
+    // si changement de bouton radio sur combien de temps on reste, alors on affiche la suite ou pas
     stayAnswer.forEach(function (radio) {
         radio.addEventListener('change', function () {
                 if (document.getElementById('stay-1').checked) {
@@ -75,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Gérer affichage de la petite réponse
+    // si changement de bouton radio sur je veux logement, alors on affiche la petite phrase
     reponsehebergement.forEach(function (radio) {
         radio.addEventListener('change', function() {
             if (document.getElementById('hebergement-oui').checked) {
@@ -103,7 +102,8 @@ document.addEventListener('DOMContentLoaded', function() {
         let dureesejour;
         let couchage;
         let formData = [];
-        
+
+         //on boucle sur le nombre d'invités renseignés pour remplir un tableau [] qui prends a la premiere itération le nom de l'invité principal puis le nom des autres
         const nombreinviteplus = document.getElementById('guests').value;
         formData = []; 
         for (let i =0; i < nombreinviteplus; i++) {
