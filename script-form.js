@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const stayAnswer = document.querySelectorAll('input[name="stay-duration"]');
     const hebergement = document.getElementById('souhait-hebergement');
     const reponsehebergement = document.querySelectorAll('input[name="hebergement"]');
+    const prereponse = document.getElementById('pre-reponse');
     
 
         guestsInput.addEventListener('input', function() {
