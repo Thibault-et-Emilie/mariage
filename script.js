@@ -22,3 +22,59 @@ menuLinks.forEach(function(link) {
         // Appliquer au chargement et au redimensionnement de la fenêtre
         window.addEventListener('load', setMilestoneRadius);
         window.addEventListener('resize', setMilestoneRadius);
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxContent = document.getElementById('lightbox-content');
+    const close = document.getElementById('close');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+
+    let currentIndex = 0;
+
+    const openLightbox = (index) => {
+        currentIndex = index;
+        lightboxContent.src = galleryItems[currentIndex].src;
+        lightbox.style.display = 'block';
+    };
+
+    const closeLightbox = () => {
+        lightbox.style.display = 'none';
+    };
+
+    const showNext = () => {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        lightboxContent.src = galleryItems[currentIndex].src;
+    };
+
+    const showPrev = () => {
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        lightboxContent.src = galleryItems[currentIndex].src;
+    };
+
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => openLightbox(index));
+    });
+
+    close.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    next.addEventListener('click', showNext);
+    prev.addEventListener('click', showPrev);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            showNext();
+        } else if (e.key === 'ArrowLeft') {
+            showPrev();
+        } else if (e.key === 'Escape') {
+            closeLightbox();
+        }
+    });
+});
