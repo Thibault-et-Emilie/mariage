@@ -163,6 +163,13 @@ header.small-header {
     cursor: pointer;
 }
 
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 section {
     font-size: large;
     margin: 10px;
