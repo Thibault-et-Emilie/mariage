@@ -161,10 +161,11 @@ header.small-header {
     border: none;
     font-size: 30px;
     cursor: pointer;
+    transition: color 0.3s;
 }
 
-#menu-toggle.hover,
-#menu-toggle.focus {
+#menu-toggle:hover,
+#menu-toggle:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
