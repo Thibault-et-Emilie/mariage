@@ -163,8 +163,8 @@ header.small-header {
     cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
+#menu-toggle.hover,
+#menu-toggle.focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
