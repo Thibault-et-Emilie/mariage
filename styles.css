@@ -272,6 +272,7 @@ section {
     display: block;
     max-width: 80%;
     max-height: 80%;
+    top:50%;
 }
 
 .close {
