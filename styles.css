@@ -22,6 +22,7 @@ header.large-header {
 }
 .milestone {
     background: rgba(147, 127, 213, 1);
+    z-index: 30
     color: #fff;
     padding: 20px;
     border: 4px solid #fff;
@@ -121,7 +122,7 @@ header.small-header {
     text-align: center;
     background-color: rgba(190, 165, 210, 0.9);
     padding-top: 80px; /* Même hauteur que le header pour éviter de cacher le contenu */
-    z-index: 20; /* Pour s'assurer que le menu apparaît au-dessus de tout */
+    z-index: 50; /* Pour s'assurer que le menu apparaît au-dessus de tout */
     transition: transform 0.6s ease-in-out;
     transform: translateX(100%); /* Déplacer le menu hors de la vue */
 }
@@ -155,7 +156,7 @@ header.small-header {
     top: 40px;
     right: 40px;
     background-color: transparent;
-    z-index: 30;
+    z-index: 40;
     color: white;
     border: none;
     font-size: 30px;
