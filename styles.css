@@ -156,7 +156,7 @@ header.small-header {
     top: 40px;
     right: 40px;
     background-color: transparent;
-    z-index: 40;
+    z-index: 60;
     color: white;
     border: none;
     font-size: 30px;
@@ -277,6 +277,7 @@ section {
 
 .close {
     position: absolute;
+    z-index:200;
     top: 20px;
     right: 35px;
     color: #fff;
