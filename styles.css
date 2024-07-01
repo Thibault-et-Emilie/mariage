@@ -34,10 +34,7 @@ header.large-header {
 }
 
 header.small-header {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),url('background.jpg'); 
-    background-attachment: fixed; 
-    background-size: cover; /* Pour couvrir tout l'écran */
-    background-position: center; 
+    
     color: white;
     padding-top: 5em;
     padding-bottom: 15em;
