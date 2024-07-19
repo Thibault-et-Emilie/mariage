@@ -135,6 +135,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
 
          document.getElementById('response').innerText = 'Merci pour votre réponse!';
+
+       setTimeout(() => {
+            document.getElementById('rsvp-form').reset();
+            document.getElementById('response').innerText = '';
+        }, 2000);
     
     });
 });
