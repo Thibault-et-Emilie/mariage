@@ -3,7 +3,7 @@ body {
     line-height: 1.4;
     margin: 0;
     padding: 0;
-    background-image: url('images/hameau valou ia.png'); /* Ajoute ton image de fond ici */
+    background-image: url('images/hameau valou ia court.png'); /* Ajoute ton image de fond ici */
     background-attachment: fixed; /* Pour l'effet de défilement parallaxe */
     background-size: cover; /* Pour couvrir tout l'écran */
     background-position: center; /* Centre l'image de fond */
