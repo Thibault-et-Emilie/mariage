@@ -81,6 +81,10 @@ header.small-header {
     color: white; 
 }
 
+.small-text {
+    font-size: 16px; /* Exemple de taille de police plus petite */
+}
+
 /* Styles pour le bouton RSVP */
 .rsvp-button {
     display: inline-block;
@@ -89,7 +93,7 @@ header.small-header {
     color: #fff;
     text-decoration: none;
     border: 4px solid #fff;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.3);
     transition: background 0.3s, color 0.3s;
     margin-top: 20px;
 }
