@@ -10,6 +10,17 @@ menuLinks.forEach(function(link) {
     });
 })
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Fonction pour détecter si l'utilisateur utilise un appareil Apple
+    function isAppleDevice() {
+        return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    }
+
+    // Ajouter une classe spécifique au body si c'est un appareil Apple
+    if (isAppleDevice()) {
+        document.body.classList.add('apple-device');
+    }
+
 //on calcule la largeur du rectangle qui se définit en fonction de l'écran, puis on utilise cette valeur pour faire un demi cercle parfait
  function setMilestoneRadius() {
             const milestone = document.querySelector('.milestone');
