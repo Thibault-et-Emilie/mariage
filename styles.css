@@ -7,7 +7,7 @@ body {
     /*background-attachment: fixed; /* Pour l'effet de défilement parallaxe */
     /*background-size: cover; /* Pour couvrir tout l'écran */
     /*background-position: center; /* Centre l'image de fond */
-    /*background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
 
   body:after{
       content:"";
