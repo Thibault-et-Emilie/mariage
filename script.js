@@ -1,8 +1,9 @@
 document.getElementById('menu-toggle').addEventListener('click', function() {
     document.getElementById('main-nav').classList.toggle('open'); // Ajoute ou retire la classe "open" pour afficher ou masquer le menu
 });
-// chaque bouton du menu, si on clique dessus on enleve la classe"open"du menu
+// chaque bouton du menu, si on clique dessus on enleve la classe "open" du menu
 const menuLinks = document.querySelectorAll('#main-nav ul li a');
+const closeIcon = document.getElementById('closeIcon');
 
 menuLinks.forEach(function(link) {
     link.addEventListener('click', function() {
@@ -10,6 +11,21 @@ menuLinks.forEach(function(link) {
     });
 })
 
+closeIcon.addEventListener('click', function() {
+    document.getElementById('main-nav').classList.remove('open');
+})
+
+// Ajouter un événement de clic sur le document pour fermer le menu si l'on clique en dehors
+document.addEventListener('click', function(event) {
+    const mainNav = document.getElementById('main-nav');
+    const menuToggle = document.getElementById('menu-toggle');
+    const isClickInsideNav = mainNav.contains(event.target);
+    const isClickInsideToggle = menuToggle.contains(event.target);
+
+    if (!isClickInsideNav && !isClickInsideToggle) {
+        mainNav.classList.remove('open');
+    }
+});
 
 //on calcule la largeur du rectangle qui se définit en fonction de l'écran, puis on utilise cette valeur pour faire un demi cercle parfait
  function setMilestoneRadius() {
