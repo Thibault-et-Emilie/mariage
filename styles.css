@@ -28,15 +28,13 @@ body {
 
 /* PAGE ACCUEIL */
 
-.container-page-accueil {
-    margin: 0 2rem;
-}
+
 
 
 header.large-header {
     color: white;
-    padding-top: 2em;
-    padding-bottom:2em;
+    padding-top: 8em;
+    padding-bottom:8em;
     text-align: center;
     position: relative;
     z-index: 10;
@@ -229,7 +227,7 @@ section {
     font-size: large;
     margin: 10px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 50px;
     position: relative;
     z-index: 2;
     text-align: center;
@@ -244,14 +242,14 @@ section {
 }
 
 #notre-histoire {
-    background: rgba(253, 240, 231, 0.85); /* Légère transparence pour les sections */
+    background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
     h2 {
         color: rgba(147, 127, 213, 1);
         }
 }
 
 #details {
-    background: rgba(253, 240, 231, 0.85); /* Légère transparence pour les sections */
+    background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
      h2 {
     color: rgba(217, 52, 62, 1);
     }
@@ -265,7 +263,7 @@ section {
 }
 
 #rsvp {
-    background: rgba(253, 240, 231, 0.85); /* Légère transparence pour les sections */
+    background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
     h2 {
         color: rgba(147, 127, 213, 1);
     }
@@ -277,7 +275,7 @@ section {
 
 #checklist{
     z-index: 2;
-    background: rgba(253, 240, 231, 0.85); /* Légère transparence pour les sections */
+    background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
     h2 {
         color: rgba(242, 124, 19, 1);
     }
@@ -286,7 +284,7 @@ section {
 
 #contact {
     z-index: 2;
-    background: rgba(253, 240, 231, 0.85); /* Légère transparence pour les sections */
+    background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
     h2 {
         color: rgba(50, 39, 239, 1);
     }
