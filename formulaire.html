@@ -15,56 +15,56 @@
 </head>
 <body>
     <header class="small-header">
-        <h1>Formulaire de réponse</h1>
-        <p>Remplissez le formulaire ci-dessous pour confirmer votre présence à notre mariage.</p>
+        <h1 id="rsvp-title">Formulaire de réponse</h1>
+        <p class="rsvp-subtitle">Remplissez le formulaire ci-dessous pour confirmer votre présence à notre mariage.</p>
         <br>
-        <p>Afin de profiter pleinement de tous et en toute sérénité (le lieu comporte des piscines, de nombreux recoins et escaliers en pierre), nous souhaiterions faire un mariage entre adultes et espérons que les parents pourront être présents malgré cette contrainte.</p>
+        <p class="rsvp-subtitle">Afin de profiter pleinement de tous et en toute sérénité (le lieu comporte des piscines, de nombreux recoins et escaliers en pierre), nous souhaiterions faire un mariage entre adultes et espérons que les parents pourront être présents malgré cette contrainte.</p>
     </header>
-    <section id="rsvp">
+    <section id="container-form">
         <form id="rsvp-form">
-            <label for="name">Prénom et nom:</label>
-            <input type="text" id="name" name="name" required>
+            <label class="label-title" for="name">Prénom et nom :</label>
+            <input type="text" id="name" name="name" placeholder="Martin Dupond" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label class="label-title" for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="martin.dupond@gmail.com" required>
 
-            <label for="guests">Nombre d'invités:</label>
+            <label class="label-title" for="guests">Nombre d'invités :</label>
             <input type="number" id="guests" name="guests" min="1" value="1" required>
 
             <div id="guest-names"></div> <!-- Conteneur pour les prénoms des invités -->
 
             <!-- Nouvelle question avec boutons radio -->
-            <label>Pourrez-vous participer à l'événement ?</label>
+            <label class="label-title">Pourrez-vous participer à l'événement ?</label>
             <div>
-                <input type="radio" id="participate-yes" name="participate" value="oui" required>
+                <input class="radio-inputs" type="radio" id="participate-yes" name="participate" value="oui" required>
                 <label for="participate-yes">Oui</label>
             </div>
             <div>
-                <input type="radio" id="participate-no" name="participate" value="non" required>
+                <input class="radio-inputs" type="radio" id="participate-no" name="participate" value="non" required>
                 <label for="participate-no">Non</label>
                 
             <div id="stay-options" style="display: none;">
-                <label>Super ! Combien de temps resterez-vous pour profiter avec nous ?</label>
+                <label class="label-title">Super ! Combien de temps resterez-vous pour profiter avec nous ?</label>
                 <div>
-                    <input type="radio" id="stay-4" name="stay-duration" value="Tout le séjour!">
+                    <input class="radio-inputs" type="radio" id="stay-4" name="stay-duration" value="Tout le séjour!">
                     <label for="stay-4">Tout le séjour !</label>
                 </div>
                 <div>
-                    <input type="radio" id="stay-3" name="stay-duration" value="Jusqu'au jeudi soir">
+                    <input class="radio-inputs" type="radio" id="stay-3" name="stay-duration" value="Jusqu'au jeudi soir">
                     <label for="stay-3">Jusqu'au jeudi soir</label>
                 </div>
                 <div>
-                    <input type="radio" id="stay-2" name="stay-duration" value="Jusqu'au jeudi midi">
+                    <input class="radio-inputs" type="radio" id="stay-2" name="stay-duration" value="Jusqu'au jeudi midi">
                     <label for="stay-2">Jusqu'au jeudi midi</label>
                 </div>
                 <div>
-                    <input type="radio" id="stay-1" name="stay-duration" value="Seulement la première soirée">
+                    <input class="radio-inputs" type="radio" id="stay-1" name="stay-duration" value="Seulement la première soirée">
                     <label for="stay-1">Seulement la première soirée</label>
                 </div>
             </div>
                 
                 <div id="souhait-hebergement" style="display: none;">
-                <label><p>Est-ce que vous souhaiteriez avoir un hébergement sur le lieu du mariage ?</p>
+                <label><p class="label-title">Est-ce que vous souhaiteriez avoir un hébergement sur le lieu du mariage ?</p>
                     <div class="image-chambres">
                         <img src="images/chambre1.jpg" alt="ExempleChambre1" class="gallery-item">
                         <img src="images/chambre2.jpg" alt="ExempleChambre2" class="gallery-item">
@@ -72,11 +72,11 @@
                     <p>Nous demanderons une participation de 60€/pers pour la durée du séjour pour réserver votre chambre/appartement</p>
                     <p>Malgré le grand nombre de logements, il n'y en aura peut-être pas pour tout le monde.</p></label>
                 <div>
-                    <input type="radio" id="hebergement-oui" name="hebergement" value="Oui, comment on fait pour le paiement?">
-                    <label for="hebergement-oui">Oui, comment on fait pour le paiement?</label>
+                    <input class="radio-inputs" type="radio" id="hebergement-oui" name="hebergement" value="Oui, comment on fait pour le paiement?">
+                    <label class="label-title" for="hebergement-oui">Oui, comment on fait pour le paiement?</label>
                 </div>
                 <div>
-                    <input type="radio" id="hebergement-non" name="hebergement" value="Non merci!">
+                    <input class="radio-inputs" type="radio" id="hebergement-non" name="hebergement" value="Non merci!">
                     <label for="hebergement-non">Non merci</label>
                 </div>  
                 <div id="pre-reponse" style="display: none;">
@@ -88,7 +88,7 @@
         <p id="response"></p>
     </section>
     <section id="retour">
-    <p><a href="index.html">Retour à la page d'acceuil</a></p>
+    <p><a href="index.html">Retour à la page d'accueil</a></p>
     </section>    
 </body>
 </html>
