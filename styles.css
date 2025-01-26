@@ -114,9 +114,12 @@ header.small-header {
     font-size: 55px;
     color: white; 
 }
+.medium-text {
+    font-family: 'Signature', serif;
+    font-size: 50px; 
+}
 
 .small-text {
-    font-family: 'Typewriter', serif;
     font-size: 18px; /* Exemple de taille de police plus petite */
 }
 
