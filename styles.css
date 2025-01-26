@@ -1,11 +1,11 @@
-font-face {
+@font-face {
     font-family: 'Typewriter';
     src: url('./Tox Typewriter.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-font-face {
+@font-face {
     font-family: 'Signature';
     src: url('./Bestina Signature.ttf') format('truetype');
     font-weight: normal;
