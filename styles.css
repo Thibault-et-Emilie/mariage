@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'Typewriter';
+    src: url('./Tox Typewriter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Typewriter', serif;
     line-height: 1.4;
     margin: 0;
     padding: 0;
