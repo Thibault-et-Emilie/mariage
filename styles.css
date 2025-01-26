@@ -1,10 +1,16 @@
-@font-face {
+font-face {
     font-family: 'Typewriter';
     src: url('./Tox Typewriter.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+font-face {
+    font-family: 'Signature';
+    src: url('./Bestina Signature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     font-family: 'Typewriter', serif;
     line-height: 1.4;
@@ -49,6 +55,7 @@ header.large-header {
     
 }
 .milestone {
+    font-family: 'Signature', serif;
     background: rgba(147, 127, 213, 1);
     z-index: 30;
     color: #fff;
@@ -71,6 +78,7 @@ header.small-header {
 
 
 .superposed-title {
+    font-family: 'Typewriter', serif;
     position: relative;
     display: inline-block;
     line-height: 1.2; /* Hauteur de ligne pour espacement vertical */
