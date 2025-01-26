@@ -277,6 +277,13 @@ section {
     font-weight: 600;
 }
 
+#liste {
+    background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
+     h2 {
+    color: rgba(61, 9, 209, 1);
+    }
+}
+
 #rsvp {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
     h2 {
