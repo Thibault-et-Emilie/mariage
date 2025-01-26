@@ -88,7 +88,7 @@ header.small-header {
     font-weight: 400;
     position: absolute;
     top: 10px;
-    left: -95px;
+    left: -90px;
     right: 0;
     font-size: 55px; 
     color: white; 
@@ -109,14 +109,15 @@ header.small-header {
     font-weight: 400;
     position: absolute;
     top: 70px;
-    left:-138px;
+    left:-125px;
     right: 0;
     font-size: 55px;
     color: white; 
 }
 
 .small-text {
-    font-size: 16px; /* Exemple de taille de police plus petite */
+    font-family: 'Typewriter', serif;
+    font-size: 18px; /* Exemple de taille de police plus petite */
 }
 
 /* Styles pour le bouton RSVP */
@@ -430,6 +431,7 @@ section {
 
 
 #carte {
+    font-family: 'Signature', serif;
     background: transparent; /* Légère transparence pour les sections */
     height: 0;
     padding-bottom: 56.25%; /* Proportion 16:9 */
