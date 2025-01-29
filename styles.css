@@ -433,15 +433,20 @@ section {
 
 
 #carte {
+    
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
-    height: 0;
-    padding-bottom: 56.25%; /* Proportion 16:9 */
+    padding-bottom: 30px; 
     position: relative;
-    min-height: 200px;
+    min-height: 300px;
     h2 {
         font-family: 'Signature', serif;
         color: white;
         text-shadow: 1px 1px 1px black;
+        }
+    h3 {
+        font-family: 'Typewriter', serif;
+        color: rgba(205, 159,255);
+        font-size:25px;
         }
 }
 
