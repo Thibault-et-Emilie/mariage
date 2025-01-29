@@ -434,7 +434,7 @@ section {
 
 #carte {
     font-family: 'Signature', serif;
-    background: transparent; /* Légère transparence pour les sections */
+    background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
     height: 0;
     padding-bottom: 56.25%; /* Proportion 16:9 */
     position: relative;
