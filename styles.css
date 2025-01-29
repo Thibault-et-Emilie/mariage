@@ -453,7 +453,6 @@ section {
 
 
 #carte iframe {
-    position: absolute;
     border-radius:20px;
     top: 20% ;
     bottom: 10% ;
