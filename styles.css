@@ -275,6 +275,7 @@ section {
     a {
         text-decoration: none;
     }
+}
 
 #details {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
