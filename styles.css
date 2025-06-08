@@ -266,6 +266,16 @@ section {
         }
 }
 
+#photos {
+    z-index: 2;
+    background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
+    h2 {
+        color: rgba(50, 39, 239, 1);
+    }
+    a {
+        text-decoration: none;
+    }
+
 #details {
     background: rgba(253, 240, 231, 0.95); /* Légère transparence pour les sections */
      h2 {
